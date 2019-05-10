@@ -4,7 +4,7 @@ templateKey: blog-post
 title: Career Search Ongoing
 date: 2010-10-24T20:06:59-05:00
 author: spmcbride1201
-permalink: career-search-ongoing/
+slug: career-search-ongoing/
 coverimage: /img/posts/careerSearchOngoingCover.png
 ---
 

@@ -4,7 +4,7 @@ category: Career
 title: Java and Robert Santos
 date: 2010-12-10T03:18:59-05:00
 author: spmcbride1201
-permalink: java-and-robert-santos/
+slug: java-and-robert-santos/
 coverimage: /img/posts/javaAndSantos.png
 ---
 

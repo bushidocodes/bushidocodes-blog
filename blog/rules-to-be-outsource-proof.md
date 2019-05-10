@@ -4,7 +4,7 @@ templateKey: blog-post
 title: Rules to be Outsource-Proof
 date: 2016-10-18T07:50:59-05:00  
 author: spmcbride1201
-permalink: rules-to-be-outsource-proof/
+slug: rules-to-be-outsource-proof/
 coverimage: /img/posts/outsourcing.jpg
 ---
 

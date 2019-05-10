@@ -4,7 +4,7 @@ templateKey: blog-post
 title: Silencing the Siren Song
 date: 2016-12-14T22:09:30-05:00
 author: spmcbride1201
-permalink: silencing-the-siren-song
+slug: silencing-the-siren-song
 coverimage: /img/posts/sirens.jpg
 ---
 

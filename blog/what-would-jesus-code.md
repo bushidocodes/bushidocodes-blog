@@ -4,7 +4,7 @@ category: Career
 title: What would Jesus code?
 date: 2013-07-13T17:10:59-05:00 
 author: spmcbride1201
-permalink: what-would-jesus-code/
+slug: what-would-jesus-code/
 coverimage: /img/posts/jesusComputerCover.jpg
 ---
 

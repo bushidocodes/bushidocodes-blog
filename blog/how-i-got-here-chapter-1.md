@@ -4,7 +4,7 @@ category: Career
 title: 'How I got here: Chapter 1'
 date: 2018-04-09T18:50:41.000Z
 author: spmcbride1201
-permalink: how-i-got-here-chapter-1
+slug: how-i-got-here-chapter-1
 coverimage: /img/posts/silicon-valley-1991.jpg
 tags:
   - career

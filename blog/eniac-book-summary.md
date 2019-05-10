@@ -4,7 +4,7 @@ category: History
 title: Summary of ENIAC by Scott McCartney
 date: 2018-07-29T02:31:59-05:00
 author: spmcbride1201
-permalink: eniac-book-summary/
+slug: eniac-book-summary/
 coverimage: /img/posts/eniac.jpg
 ---
 

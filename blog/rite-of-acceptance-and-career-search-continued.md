@@ -4,7 +4,7 @@ templateKey: blog-post
 title: Rite of Acceptance and Career Search Continued
 date: 2010-12-05T21:36:59-05:00
 author: spmcbride1201
-permalink: rite-of-acceptance-and-career-search-continued/
+slug: rite-of-acceptance-and-career-search-continued/
 coverimage: /img/posts/riteOfAcceptanceCover.png
 ---
 

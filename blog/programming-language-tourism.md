@@ -4,7 +4,7 @@ templateKey: blog-post
 title: Programming Language Tourism
 date: 2019-05-10T13:43:59-05:00 
 author: spmcbride1201
-permalink: programming-language-tourism/
+slug: programming-language-tourism/
 ---
 A key assumption behind my decision to go back to grad school was that I would be free to engage in passion projects and creative coding. Alas, phrases like "that does not sufficiently advance the state-of-the-art" or "that is too engineering-centric" turn out to be the academic equivalent of something failing to demonstrate sufficient near-term business value. As a result, I've decided to deallocate time from graduate studies and research this summer to pursue projects that fulfill me.
 

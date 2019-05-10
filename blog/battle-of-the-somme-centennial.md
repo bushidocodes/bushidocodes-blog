@@ -5,7 +5,7 @@ section-type: post
 title: Battle of the Somme Centennial
 date: 2016-06-29T23:50:59-05:00   
 author: spmcbride1201
-permalink: battle-of-the-somme-centennial/
+slug: battle-of-the-somme-centennial/
 coverimage: /img/posts/Somme-Tommies-Charge.jpg
 ---
 

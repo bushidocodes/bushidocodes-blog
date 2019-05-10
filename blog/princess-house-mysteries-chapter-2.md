@@ -4,7 +4,7 @@ templateKey: blog-post
 title: "Princess House Mysteries: Chapter 2"
 date: 2015-04-12T03:30:59-05:00   
 author: spmcbride1201
-permalink: princess-house-mysteries-chapter-2/
+slug: princess-house-mysteries-chapter-2/
 coverimage: /img/posts/phmc2Cover.jpg
 ---
 

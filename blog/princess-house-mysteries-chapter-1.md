@@ -4,7 +4,7 @@ templateKey: blog-post
 title: "Princess House Mysteries: Chapter 1"
 date: 2015-04-01T01:58:59-05:00 
 author: spmcbride1201
-# permalink: princess-house-mysteries-chapter-1/
+# slug: princess-house-mysteries-chapter-1/
 coverimage: /img/posts/20150327_205650489_iOS.jpg
 ---
 

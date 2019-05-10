@@ -4,7 +4,7 @@ templateKey: blog-post
 title: Sharks, Strength, Simulacra, Sandcastles
 date: 2019-05-09T13:43:59-05:00 
 author: spmcbride1201
-permalink: sharks-strength-simulacra-sandcastles/
+slug: sharks-strength-simulacra-sandcastles/
 ---
 
 Some species of sharks need to stay in motion to stay alive <br/>

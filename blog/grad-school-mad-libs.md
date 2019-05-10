@@ -4,7 +4,7 @@ category: Career
 title: Grad School Mad Libs
 date: 2019-05-05T22:09:59-05:00
 author: spmcbride1201
-permalink: grad-school-mad-libs/
+slug: grad-school-mad-libs/
 coverimage: /img/posts/ticonderogas.jpg
 ---
 

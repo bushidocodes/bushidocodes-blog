@@ -4,7 +4,7 @@ templateKey: blog-post
 title: Regular Expressions Reference
 date:  2016-11-06T22:11:59-05:00
 author: spmcbride1201
-permalink: regex-reference/
+slug: regex-reference/
 coverimage: /img/posts/wazup.jpg
 ---
 

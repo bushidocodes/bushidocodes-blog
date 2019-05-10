@@ -4,7 +4,7 @@ category: Opinion
 title: 'HQ2 at Crystal City'
 date: 2018-11-13T18:50:41.000Z
 author: spmcbride1201
-permalink: hq2-at-crystal-city
+slug: hq2-at-crystal-city
 coverimage: /img/posts/crystal-city.jpg
 ---
 

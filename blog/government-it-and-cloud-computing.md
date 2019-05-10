@@ -4,7 +4,7 @@ category: Career
 title: Government IT and Cloud Computing
 date: 2010-12-11T22:09:59-05:00
 author: spmcbride1201
-permalink: government-it-and-cloud-computing/
+slug: government-it-and-cloud-computing/
 coverimage: /img/posts/cloudFirstCover.png
 ---
 

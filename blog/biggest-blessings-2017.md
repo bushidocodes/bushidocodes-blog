@@ -5,7 +5,7 @@ title: 'Biggest Blessings of 2017 '
 date: 2018-01-01T18:50:41.000Z
 description: As I reflect back on the last year, here are the things for which I am especially thankful for.
 author: spmcbride1201
-permalink: biggest-blessings-2017
+slug: biggest-blessings-2017
 coverimage: /img/posts/unicycles.jpg
 tags:
   - career
