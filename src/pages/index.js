@@ -47,7 +47,9 @@ const IndexPage = ({
       <Hero>
         <h1>Hi.</h1>
         <p>
-          I&apos;m Sean McBride, a military veteran turned Software Engineer. You can consider me an aspiring Software Samurai.
+          I&apos;m Sean McBride, a military veteran turned Software Engineer. 
+          <br/>
+          I code with Honor, defend the Just, and pursue lofty undertakings on the Cutting Edge
         </p>
         <p>You can connect with me on 
           <a href="https://www.linkedin.com/in/bushidocodes/"> LinkedIn</a> or

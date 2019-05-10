@@ -7,13 +7,13 @@ module.exports = {
   siteLanguage: 'en', // Language Tag on <html> element
   siteBanner: '/social/banner.jpg', // Your image for og:image tag. You can find it in the /static folder
   favicon: 'src/favicon.png', // Your image for favicons. You can find it in the /src folder
-  siteDescription: 'Minimal Blog with big typography', // Your site description
-  author: 'LekoArts', // Author for schemaORGJSONLD
+  siteDescription: 'Codes with Honor, Defends the Just, Pursues Lofy Undertakings on the Cutting Edge', // Your site description
+  author: 'Sean McBride', // Author for schemaORGJSONLD
   siteLogo: '/social/logo.png', // Image for schemaORGJSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
   userTwitter: '@bushidocodes', // Twitter Username - Optional
-  ogSiteName: 'minimal', // Facebook Site Name - Optional
+  ogSiteName: 'Bushido Codes', // Facebook Site Name - Optional
   ogLanguage: 'en_US', // Facebook Language
 
   // Manifest and Progress color
