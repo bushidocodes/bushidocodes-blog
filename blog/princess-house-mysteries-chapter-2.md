@@ -10,7 +10,7 @@ coverimage: /img/posts/phmc2Cover.jpg
 
 ![](/img/posts/phmc2Cover.jpg)
 
-<a href="http://spmcb.com/princess-house-mysteries-chapter-1/" target="_blank">In Chapter 1 of the Princess House Mysteries</a>, I discovered that my new home at 1204 Princess Street wasn't built in 1920 like I had originally thought, but that it was built around 1850 and moved to its current location in Parker Gray around 1880, perhaps by an individual named Benjamin Williams. This discovery led me to wonder about two questions:
+<a href="https://www.bushido.codes/princess-house-mysteries-chapter-1" target="_blank">In Chapter 1 of the Princess House Mysteries</a>, I discovered that my new home at 1204 Princess Street wasn't built in 1920 like I had originally thought, but that it was built around 1850 and moved to its current location in Parker Gray around 1880, perhaps by an individual named Benjamin Williams. This discovery led me to wonder about two questions:
 
 <em>Where was the house previously located?</em>
 

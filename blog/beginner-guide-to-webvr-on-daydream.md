@@ -18,7 +18,7 @@ Earlier today, I was pleased to discover that FedEx had shipped me an important 
 
 After ripping open the box, getting all the cords untied, and getting the updates installed on both the phone and the Daydream controller, I slid the handset into the headset (say that 5x fast) and materialized in a three-dimensional forest.
 
-Fast forward thirty minutes, and I was staring at the very cool VR menu of Daydream-enabled apps. There were 360 degree panoramas in Google Photos, VR cinema mode in HBO Go (perfect for re-watching Westworld Season 1), and even a VR-ified version of the very-frightening [LAYERS OF FEAR](http://uploadvr.com/layers-fear-coming-daydream-year/).
+Fast forward thirty minutes, and I was staring at the very cool VR menu of Daydream-enabled apps. There were 360 degree panoramas in Google Photos, VR cinema mode in HBO Go (perfect for re-watching Westworld Season 1), and even a VR-ified version of the very-frightening [LAYERS OF FEAR](https://uploadvr.com/layers-fear-coming-daydream-year/).
 
 What more could a web dev want? Well, I suppose Chrome...
 

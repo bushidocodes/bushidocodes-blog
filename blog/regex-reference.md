@@ -12,7 +12,7 @@ coverimage: /img/posts/wazup.jpg
 
 ## Why this reference?
 
-After the first week of my junior phase at [Fullstack Academy](http://www.fullstackacademy.com/), it's clear to me that Regular Expressions is a concept that I need to master quickly. In the past, I've usually performed string manipulation through verbose and brute-force if/else logic. This approach does not work cleaning in succint functional styles of writing JavaScript. This content is derived from notes I took during the CodeSchool course I link at the bottom of this page and experimentation that I performed on [RegEx101.com](https://regex101.com/). While these materials are primarily intended to serve as a personal reference, I've posed them to my blog in case they might help others.
+After the first week of my junior phase at [Fullstack Academy](https://www.fullstackacademy.com/), it's clear to me that Regular Expressions is a concept that I need to master quickly. In the past, I've usually performed string manipulation through verbose and brute-force if/else logic. This approach does not work cleaning in succint functional styles of writing JavaScript. This content is derived from notes I took during the CodeSchool course I link at the bottom of this page and experimentation that I performed on [RegEx101.com](https://regex101.com/). While these materials are primarily intended to serve as a personal reference, I've posed them to my blog in case they might help others.
 
 ## Regular Expression Literals
 
@@ -196,6 +196,6 @@ If you are using capture groups, you need to mark all uses of paratheses that ar
 ## Additional Resources for JavaScript
 
 * [CodeSchool's Breaking the Ice with Regular Expressions Course](https://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions)
-* [Eloquent JavaScript, Chapter 9: Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
+* [Eloquent JavaScript, Chapter 9: Regular Expressions](https://eloquentjavascript.net/09_regexp.html)
 * [JavaScript RegExp on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 * [RegEx 101](https://regex101.com/)

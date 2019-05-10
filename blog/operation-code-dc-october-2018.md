@@ -35,6 +35,6 @@ I really enjoyed seeing so many folks having good conversations outside of the f
 ![](/img/posts/opcode-oct-18/7.jpg)
 ![](/img/posts/opcode-oct-18/8.jpg)
 
-All these amazing photos were taken by the singularly amazing Kaitlin Moreno. It's quite the privilege to have a professional photographer attend our meetups. If you are interested in booking her to shoot a wedding, portrait, or corporate event, check out here site at http://www.kaitlinjane.com/
+All these amazing photos were taken by the singularly amazing Kaitlin Moreno. It's quite the privilege to have a professional photographer attend our meetups. If you are interested in booking her to shoot a wedding, portrait, or corporate event, check out here site at https://www.kaitlinjane.com/
 
 Finally, our next meetup is back at GE Aviation on November 8th at 6pm. We'll learn about the cyber security career field, and hear from speakers from Homeland Security, Synack, and the Army Reserve.
