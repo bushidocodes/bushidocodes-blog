@@ -56,7 +56,7 @@ const Post = ({ pageContext: { slug, prev, next }, data: { markdownRemark: postN
           <Disqus 
             identifier={post.slug}
             title={post.title}
-            url={`${config.siteUrl}${window.location.pathname}`}
+            url={`${config.siteUrl}${post.slug}`}
           />
           <PrevNext prev={prev} next={next} />
         </Content>
