@@ -10,6 +10,8 @@ import { media } from '../utils/media';
 import config from '../../config/SiteConfig';
 import '../utils/prismjs-theme.css';
 
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
+
 const Content = styled.article`
   grid-column: 2;
   box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
@@ -56,7 +58,7 @@ const Post = ({ pageContext: { slug, prev, next }, data: { markdownRemark: postN
           <Disqus 
             identifier={post.slug}
             title={post.title}
-            url={`${config.siteUrl}${post.slug}`}
+            url={`${config.siteUrl}${pathPrefix}${post.slug}`}
           />
           <PrevNext prev={prev} next={next} />
         </Content>
