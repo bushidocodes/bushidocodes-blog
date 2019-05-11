@@ -18,7 +18,7 @@ My coursework has been pretty interesting so far. Here’s a run-down of the cou
 	<li>Project Management for IT – This course teaches Project Management techniques through lecture and hands-on group projects. It is designed to prepare me for the Project Management Professional (PMP) certification</li>
 	<li>Network and Internet Technologies – This course focuses on teaching the ways that the networking technologies beneath networks and internetworks functions. It also is tied to the CompTia Net+ certification</li>
 	<li>Databases – This course teaches how to design, normalize, and build relational databases in a variety of software systems. It is primarily focused of Oracle technologies.</li>
-	<li>Web Design – This course teaches HTML5, CSS3, and Javascript with the aim of designing and developing a modern web site. I’m actually using these lessons to build my social-media resume at <a href="http://www.spmcb.com">www.spmcb.com</a>.</li>
+	<li>Web Design – This course teaches HTML5, CSS3, and Javascript with the aim of designing and developing a modern web site. I’m actually using these lessons to build my social-media resume at <a href="https://www.spmcb.com">www.spmcb.com</a>.</li>
 	<li>Information Security Management –This course teaches industry and government standards and practices for security digital information. Much of the content comes from the NSA. This course also helps me prepare for the CISSP (Certified Information Systems Security Professional) exam.</li>
 	<li>Object-Oriented Programming – In addition to my IIT coursework, I’m still working on my online Java development training through the O’Reilly School of Technology.</li>
 </ul>
