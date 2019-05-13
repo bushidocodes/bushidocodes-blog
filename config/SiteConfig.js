@@ -3,7 +3,7 @@ module.exports = {
   
   author: 'Sean McBride', // Author for schemaORGJSONLD
   favicon: 'src/favicon.png', // Your image for favicons. You can find it in the /src folder
-  siteBanner: '/social/banner.jpg', // Your image for og:image tag. You can find it in the /static folder
+  siteBanner: '/social/banner.jpg?1', // Your image for og:image tag. You can find it in the /static folder
   siteDescription: 'Codes with Honor, Defends the Just, Pursues Lofty Undertakings on the Cutting Edge', // Your site description
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/social/logo.png', // Image for schemaORGJSONLD
