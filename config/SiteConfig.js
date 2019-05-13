@@ -9,7 +9,7 @@ module.exports = {
   siteLogo: '/social/logo.png', // Image for schemaORGJSONLD
   siteTitle: 'Bushido Codes', // Navigation and Site Title
   siteTitleAlt: 'Bushido Codes - Sean McBride', // Alternative Site title for SEO
-  siteUrl: 'https://bushido.codes', // Domain of your site. No trailing slash!
+  siteUrl: 'https://www.bushido.codes', // Domain of your site. No trailing slash!
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
   userTwitter: '@bushidocodes', // Twitter Username - Optional
