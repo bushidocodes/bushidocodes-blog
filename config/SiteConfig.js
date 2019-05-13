@@ -7,7 +7,7 @@ module.exports = {
   siteLanguage: 'en', // Language Tag on <html> element
   siteBanner: '/social/banner.png', // Your image for og:image tag. You can find it in the /static folder
   favicon: 'src/favicon.png', // Your image for favicons. You can find it in the /src folder
-  siteDescription: 'Codes with Honor, Defends the Just, Pursues Lofy Undertakings on the Cutting Edge', // Your site description
+  siteDescription: 'Codes with Honor, Defends the Just, Pursues Lofty Undertakings on the Cutting Edge', // Your site description
   author: 'Sean McBride', // Author for schemaORGJSONLD
   siteLogo: '/social/logo.png', // Image for schemaORGJSONLD
 
