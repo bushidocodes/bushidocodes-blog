@@ -44,6 +44,6 @@ Thus began a multi-month odyssey going to popup "Computer Show and Sale" events 
 
 I popped in an MS-DOS floppy diskette and a Windows 95 CD-ROM, and I got to work partitioning and formating the hard drive and installing the operating system. Once the system booted, I took a closer look at what else was on the CD, and noticed a video file. I double clicked, and Weezer's Buddy Holly music video started playing. Too bad I hadn't yet earned the money to buy a sound card!
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/hqi2Jy0UMiA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/hqi2Jy0UMiA" frameborder="0" allowfullscreen></iframe>
 
 Stay tuned for the next post to hear about how my computer obsession led me to fail out of seventh grade and later grew into a part-time job.
