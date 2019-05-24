@@ -73,7 +73,26 @@ Then I compiled source code by running `cobc -xj -free myfile.cob`
 
 ## Impressions of the Language
 
-Note: My code snippets are a bit non-idiomatic for COBOL to make them look a bit less jarring. It's common for COBOL to make all keywords and variables ALL-CAPS with compound words delimited by a dash. I've chosen to use lowercase and camel case to more closely match the idioms of other coding languages. Given syntax highlighting in modern editors, I don't consider the use of ALL-CAPS to be beneficial when reading code.
+### Dumping Legacy Idioms
+As a sixty year old language, COBOL has many strange idioms. I've chosen to dump conventions that I consider made redundant by modern tools and software engineering practices to make COBOL appear similar to other languages.
+
+Traditionally, COBOL compilers assign semantic meaning to particular column positions:
+
+* Columns 1-6 - A six digit line number
+* Column 7 - an Asterisk (*) signifies a comment, a Hyphen (-) signifies that this line continues the previous line 
+* Columns 8-11	"Area A" - Language constructs that indicate scope (COBOL divisions, sections, paragraphs and some special entries) must begin here
+* Columns 12-72 "Area B" - General use for COBOL statements
+* Columns 73-80 "Identification Area" - An additional 8 characters that can be configured to be used for COBOL statements.
+
+This format is based around the format of an IBM punched card, but the convention has long outlived this medium. Line numbers are mostly useful for GOTO statements, which are generally harmful. Being limited to 72 columns requires complex statements to unnecessarily flow across several continuation lines. Assigning semantic meaning to special characters in column 7 is esoteric and confusing. The COBOL 2002 standard introduced "free-form code," which jettisons these conventions. I use this format throughout this post, but some COBOL compilers (such as IBM Enterprise COBOL) do not support this feature.
+
+Furthermore, idiomatic COBOL typically makes all keywords and variables ALL-CAPS with compound words delimited by a dash. I've chosen to use lowercase and camel case to more closely match the idioms of other coding languages. Given syntax highlighting in modern editors, I don't consider the use of ALL-CAPS to be beneficial when reading code.
+
+Taken together, this:
+![](/img/posts/cobol-lang/StructuredCobol.jpg)
+becomes this:
+![](/img/posts/cobol-lang/FreeCobol.jpg)
+
 
 ### Source Code as a single file
 
@@ -83,7 +102,7 @@ It accomplishes this by breaking the file into different sections called `divisi
 
 Below is a Hello World example for COBOL. The optional divisions are omitted, but I have retained the `data division` to demonstrate that COBOL requires that variables be pre-declared outside of the `procedure division` where we write our code. This strict division enforces the coding best practice of declaring variables at the top of their associated scope. Indeed, small COBOL programs typically have a single global scope. I'll break down the complex line `1, greeting pic x(12) value is "Hello World".` later, so just realize that variable declaration is strictly kept separate from our code, which lives in the `procedure division`. If we were accessing other external resources, such as files from disk, we would also define those resources in the `data division`.
 
-```
+```powershell
 identification division.
 program-id. HelloWorld.
 
@@ -101,7 +120,7 @@ stop run.
 
 Let's breakdown the scary-looking line we disregarded earlier:
 
-```
+```powershell
 1, greeting pic x(12) value is "Hello World".
 ```
 
@@ -128,9 +147,9 @@ These patterns are pre-pended by the keyword `picture` (or `pic` for short)
 
 Is your mind blown? That's okay! We'll go through examples to make sure this is clear. The concept is simple, but it takes some getting used to.
 
-* `pic 9` defines a number with one digit. It does not have a character indicating a sign or a decimal, so it is an integer between 0 - 9.
+* `pic 9` defines a single character capable of storing 0 - 9 only. It does not have a character indicating a sign or a decimal, so it is an integer between 0 - 9. Given that this really is a character, not an actual number, the program internally casts this value to an internal number format when it is used in a mathematical operation. We probably can cast this value once at compile-time using the usage clause such as `pic 9 usage comp`, which is short for `pic 9 usage computational`. We'll discuss this further later!
 
-* `pic s9999v9999` is a signed decimal with +/- in the first character, four whole number digits, a decimal point, and four fractional digits. It stores float values between -9999.9999 and 9999.9999.
+* `pic s9999v9999` is a signed decimal with +/- in the first character, four whole number digits, a decimal point, and four fractional digits. It stores float values between -9999.9999 and 9999.9999. As in the last example, we likely want to add the usage clause to cast this to an actual numeric representation using `pic s9999v9999 usage comp`.
 
 * `pic x(10)` is a string of ten characters containing a mix of letters and numbers. This is a shorthand notation equivalent to `pic xxxxxxxxxx`.
 
@@ -172,19 +191,22 @@ If you refer to the statement  `1, greeting pic x(12) value is "Hello World".`, 
 
 This is a `level number` and it is used to express hierarchy among `records`. Hierarchical records are used to build more complex data structures, similar to structs in C, objects/Maps in JavaScript, or Hashes in Python.
 
-All top level variables / `records` have the level number 01. Anything from 02 to 49 indicates a child element that is part of a preceeding record with a lower level number. It is a best practice to indent `records` to make this structure more obvious and align `picture clauses` across all levels of the hierarchy.
+All top level variables / `records` have the level number 01. Anything from 02 to 49 indicates a child element that is part of a preceding record with a lower level number. However, there are a few best practices to keep in mind:
+* Increment `level numbers` by five to allow space for future intermediate levels 
+* Indent `records` to make this structure more obvious
+* Align `picture clauses` across all levels of the hierarchy
 
 For example, imagine that we were building a special data structure for storing the personnel records of servicemen and servicewomen in the U.S. military, such as Admiral Grace Hopper. We'd have stuff like name, rank, and social-security number. Let's just start with name and social-security number for now.
 
 This might look something like the following:
 
-```
+```powershell
 01 ServiceRecord.
-   02 SSN                        pic 9(9).
-   02 Name.
-      03 FirstName               pic a(20).
-      03 Filler                  pic a(1) value space.
-      03 LastName                pic a(20).
+   05 SSN                        pic 9(9).
+   05 Name.
+      10 FirstName               pic a(20).
+      10 Filler                  pic a(1) value space.
+      10 LastName                pic a(20).
 ```
 
 Because we can access the Group ID Name directly, we add a one character filler between the FirstName and LastName so the value is something like "Sean McBride" instead of "SeanMcBride".
@@ -204,16 +226,16 @@ export interface ServiceRecord {
 
 So let's add rank to this military service record. There are three types of rank, commissioned officer, warrant officer, and enlisted. Additionally, there are grades for each of these ranks (E1-E9, W1-W5, and O1-O10). However, there are also special grades for officers that used to be enlisted, such as (O2E). We can satisfy these constraints with the following:
 
-```
+```powershell
 01 ServiceRecord.
-   02 SSN                        pic 9(9).
-   02 Name.
-      03 GivenName               pic a(20).
-      03 Filler                  pic a(1) value space.
-      03 FamilyName              pic a(20).
-   02 Rank.
-      03 RankType                pic a(1)
-      03 Grade                   pic x(2)
+   05 SSN                        pic 9(9).
+   05 Name.
+      10 GivenName               pic a(20).
+      10 Filler                  pic a(1) value space.
+      10 FamilyName              pic a(20).
+   05 Rank.
+      10 RankType                pic a(1)
+      10 Grade                   pic x(2)
 ```
 
 This is roughly equivalent to the following TypeScript interface.
@@ -238,19 +260,19 @@ export interface ServiceRecord {
 
 It's likely that we'll want to use if statements to check if someone is an officer, warrant, or enlisted in our program. To do this cleanly, we can use the special `level number` 88, which is reserved for `conditional names`. These are effectively boolean values that get precomputed whenever a record is initialized or updated. These resolve to true if the record matches one of the values listed after the `conditional name`. 
 
-```
+```powershell
 01 ServiceRecord.
-   02 SSN                        pic 9(9).
-   02 Name.
-      03 GivenName               pic a(20).
-      03 FamilyName              pic a(20).
-   02 Rank.
-      03 RankType                pic a(1)
+   05 SSN                        pic 9(9).
+   05 Name.
+      10 GivenName               pic a(20).
+      10 FamilyName              pic a(20).
+   05 Rank.
+      10 RankType                pic a(1)
          88 ValidRankType        value 'O' 'E' 'W'.
          88 Enlisted             value 'E'.
          88 WarrantOfficer       value 'W'.
          88 CommissionedOfficer  value 'W'.
-      03 Grade                   pic x(2)
+      10 Grade                   pic x(2)
          88 ValidGrade           value '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '1E' '2E' '3E'.
 ```
 
@@ -273,6 +295,57 @@ Additionally, because 1960s era long-term persistent storage was punched cards t
 
 Note: You might have noticed that I characterized COBOL as a weakly-typed language. This is not a universal point of view, but I consider it appropriate because COBOL allows for implicit conversion between an alphanumeric variable like a `pic x(3)` and a numeric like a `pic 9(3)`. Without proper error and exception handling, this conversion can cause runtime crashes similar to weakly-typed languages.
 
+#### Getting closer to other languages via the Usage Clause
+
+To some of you, it sure might seem wasteful to store character encoded numbers in memory and convert these values to the appropriate number before each calculation. This would be the equivalent of doing the following in TypeScript :
+
+```js
+const myFirstNum: string = "10";
+const mySecondNum: string = "10";
+const myResult: string = (Number.parseInt(myFirstNum, 10) * Number.parseInt(mySecondNum, 10)).toString();
+```
+
+All of that decoding and encoding of strings looks expensive! Wouldn't it be better to do something like the following?
+
+```js
+const myFirstNum: number = 10;
+const mySecondNum: number = 10;
+const myResult: number = myFirstNum * mySecondNum;
+```
+
+For a long time, the COBOL standard did not allow for this. However, COBOL 2002 allows us to indicate how a number should be defined in memory via a `usage` clause.
+
+Here is the traditional COBOL method that makes heavy use of character encoding and decoding:
+```powershell
+identification division.
+program-id.   MultipleTwoNumbers.
+data division.
+working-storage section.
+01  Num1           pic 99 value is 10.
+01  Num2           pic 99 value is 10.
+01  Result         pic 999 value is zero.
+procedure division.
+multiply Num1 by Num2 giving Result.
+display "Result is = ", Result.
+```
+
+and here is the version with the usage clause that stores our variables in a numeric format:
+
+```powershell
+identification division.
+program-id.   MultipleTwoNumbers.
+data division.
+working-storage section.
+01  Num1           pic 99 usage computational value is 10.
+01  Num2           pic 99 usage computational value is 10.
+01  Result         pic 999 usage computational value is zero.
+procedure division.
+multiply Num1 by Num2 giving Result.
+display "Result is = ", Result.
+```
+
+Num1, Num2, and Result are now stored as binary numbers rather than encoded characters. Huzzah!
+
 ### English-like Syntax
 As mentioned in the history section, one of [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)'s key design goals for FLOW-MATIC and COBOL was a high-level syntax that was broadly approachable to non-mathematicians. With little prior-work to draw from, Grace effectively design from first principles. Given that most scientific languages were derived from mathematical theories, such as lambda calculus, Grace decided to derive her general-purpose business-oriented language from the humanities, specifically the structure and syntax of English prose.
 
@@ -290,7 +363,7 @@ The `procedure division` is broken into `sections`, which are labeled with a hea
 
 Here is an example guessing game written in COBOL. I am invoking sections as "open sub-routines" using the perform command. Within the GetGuess section, I am using an inline perform as a while loop to prompt the user until the input matches one of the values listed for validGuess. The loop terminates with an `end-perform`.
 
-```
+```powershell
 identification division.
 program-id. GuessingGame.
 author. Sean McBride.
@@ -332,14 +405,14 @@ Due to these characteristics, COBOL achieved its goal of democratizing programmi
 
 For this reason, we are in Grace's debt.
 
-```
+```powershell
 identification division.
 program-id. GraceHopper.
 author. Sean McBride.
 
 procedure division.
 display "                     __..````..__                      ".
-display "                 ._--```   ,.   ```--_.                 ".
+display "                 ._--```   ,.   ```--_.                ".
 display "               //``      << `)      ``\\               ".
 display "              ..    ..--../  \..--..   ..              ".
 display "              ||   /``-\__    __/-``\  ||              ".
