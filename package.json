@@ -8,6 +8,7 @@
     "gatsby": "^2.4.6",
     "gatsby-plugin-catch-links": "^2.0.14",
     "gatsby-plugin-disqus": "^1.0.3",
+    "gatsby-plugin-google-analytics": "^2.0.20",
     "gatsby-plugin-lodash": "^3.0.5",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-netlify": "^2.0.17",
