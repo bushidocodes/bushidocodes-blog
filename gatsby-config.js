@@ -72,7 +72,7 @@ module.exports = {
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
-        respectDNT: true,
+        respectDNT: false,
         // Avoids sending pageview hits from custom paths
         exclude: ["/preview/**", "/do-not-track/me/too/"],
         // Enables Google Optimize using your container Id
