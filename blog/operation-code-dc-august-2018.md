@@ -36,7 +36,7 @@ If you made the event, please drop some comments about your experience below! We
 
 If you didn't make the event, I've linked a recording of the talks and the slides below!
 
-<iframe width="744" height="419" src="https://www.youtube.com/embed/ai5rdm13Pzc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="419" src="https://www.youtube.com/embed/ai5rdm13Pzc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I'll be making an announcement in the next week or so on [our Meetup page](https://www.meetup.com/en-AU/operation-code-washingtondc/), but if you can't wait for your next sweet sweet hit of Operation Code goodness, I suggest the following
 

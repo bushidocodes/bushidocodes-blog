@@ -12,7 +12,7 @@ coverimage: /img/posts/stFrancisJudeWatsonCover.jpg
 
 Praise to God for his many blessings! I have so much to be thankful for. Firstly, I was able to survive my 15 credit hour semester at IIT with a pretty respectable GPA and a published paper. My research on the cyber security loopholes in UAVs actually turned out to be a good product. Carnegie Mellon decided to publish the paper. It’s called “Ultimate Killer Apps,” and you can read it here:
 
-<iframe style="border: 1px solid #CCC; border-width: 1px 1px 0; margin-bottom: 5px;" src="https://www.slideshare.net/slideshow/embed_code/16086522" height="511" width="479" allowfullscreen="" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<iframe style="border: 1px solid #CCC; border-width: 1px 1px 0; margin-bottom: 5px;" src="https://www.slideshare.net/slideshow/embed_code/16086522" height="511" width="100%" allowfullscreen="" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <div style="margin-bottom: 5px;"><strong> <a title="Pirating the Ultimate Killer App: Hacking Military Unmanned Aerial Vehicles" href="https://www.slideshare.net/spmcbride1201/pirating-the-ultimate-killer-app-hacking-military-unmanned-aerial-vehicales" target="_blank">Pirating the Ultimate Killer App: Hacking Military Unmanned Aerial Vehicles</a> </strong> from <strong><a href="https://www.slideshare.net/spmcbride1201" target="_blank">Sean McBride</a></strong></div>
 
@@ -26,7 +26,7 @@ Similarly, I am thankful to Saint Jude, the patron saint of lost causes, because
 
 It’s been an exciting time to join IBM, which just celebrated it’s centennial. For an idea of IBM history, check this out:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aYtY-_Emsig" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/aYtY-_Emsig" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 I’m happy to have a chance to meet such amazing peers on both the technical and business side of the house. I’m hoping to make some close friends over my next 12 months of IBM Summit Training. Here is a collage of pictures I put together from the IBM Corporate HQ in Armonk, NY. In the center you can see Summit Stream II. I have no idea why I’m the only one kneeling down. Perhaps, I’m genuflecting to the many saints that have been helping me over the past few months.
 

@@ -187,11 +187,15 @@ Wrapping a portion of a regex with paranthesis creates a match group that is ret
 
 Matches common ways of writing US phone numbers and returns the area code, first three digits, and last four digits as seperate control groups.
 
-`/\+?1?\+?\s?-?\(?(\d{3})\)?\s?-?\s?(\d{3})\s?-?(\d{4})/gm`
+```
+/\+?1?\+?\s?-?\(?(\d{3})\)?\s?-?\s?(\d{3})\s?-?(\d{4})/gm
+```
 
 If you are using capture groups, you need to mark all uses of paratheses that are used to logically group operands like OR. This is done by appending ?: at the start of the inner string of the paranthesis.
 
-`/(^(?:http://|https://)?(?:www\.)?\w+\.(?:gov|com|net|edu)$)/`
+```
+/(^(?:http://|https://)?(?:www\.)?\w+\.(?:gov|com|net|edu)$)/
+```
 
 ## Additional Resources for JavaScript
 

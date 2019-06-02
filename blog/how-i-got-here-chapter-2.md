@@ -25,7 +25,7 @@ Around this time, my Opa, Richard Grokenberger, taught me to use MS-DOS. Before 
 
 Folks at my church later took an interest in my hobby, and they started donating old computers from their attics and basements to create a computer lab that I could tinker with. This gave me access to an [original IBM PC](https://www.quora.com/What-was-it-like-to-use-the-first-IBM-Personal-Computer), a Compaq laptop, a Commodore, and an Apple \]\[. I usually spent my time writing small programs in BASIC, but I figured out that it was a good idea to keep a piece of religious software, such as the game Bible Adventures, loaded on one of the computers to make sure I looked like a studious Christian whenever the pastor came by. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QQnB5QrQWA8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/QQnB5QrQWA8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 These occasional computational dopamine squirts were great, but I had become an addict, which made one thing crystal clear:
 

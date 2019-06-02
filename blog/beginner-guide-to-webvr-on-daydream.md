@@ -32,11 +32,11 @@ The bottom line is that this is not currently possible out of box. However, this
 
 By default, Google hides the developer menu on modern Android phones about as well as my father would hide Easter eggs when I was a kid. Well, at least the developer menu doesn't stink up your house after remaining unfound for months of end. Spoiler Alert: if you navigate to settings menu, go to “About device,” and touch the “build number” seven times. I'd mention that this reminds me of some Buddhist thing where you recite the Buddha's name seven times, but that would totally mix up my religious references, so I'll leave it at that.
 
-<img alt='Screenshot showing the build numbers field that you need to touch seven times' src='/img/posts/daydream/unlock-developer-options.jpg' style='max-width: 540px;'>
+<img alt='Screenshot showing the build numbers field that you need to touch seven times' src='/img/posts/daydream/unlock-developer-options.jpg' style='width: 100%; max-width: 540px;'>
 
 In any case, if you go back to the main settings menu, you will now see a super-secret-squirrel menu named Developer Options. Head into developer options and you can turn on developer mode. Booyah! +100xp
 
-<img alt='Screenshot showing the new Developer Options field' src='/img/posts/daydream/developer-options.jpg' style='max-width: 540px;'>
+<img alt='Screenshot showing the new Developer Options field' src='/img/posts/daydream/developer-options.jpg' style='width: 100%; max-width: 540px;'>
 
 <!--![Screenshot showing the new Developer Options field](/img/posts/daydream/developer-options.jpg)-->
 
@@ -44,17 +44,17 @@ In any case, if you go back to the main settings menu, you will now see a super-
 
 From the main settings menu, select Security
 
-<img alt='Screenshot showing the Security Menu' src='/img/posts/daydream/security-settings.jpg' style='max-width: 540px;'>
+<img alt='Screenshot showing the Security Menu' src='/img/posts/daydream/security-settings.jpg' style='width: 100%; max-width: 540px;'>
 
 And turn on the toggle to allow installation of apps from unknown sources
 
-<img alt='Screenshot showing Unknown Sources toggle' src='/img/posts/daydream/install-from-unknown-sources.jpg' style='max-width: 540px;'>
+<img alt='Screenshot showing Unknown Sources toggle' src='/img/posts/daydream/install-from-unknown-sources.jpg' style='width: 100%; max-width: 540px;'>
 
 ## Step Three: Get File Manager (and optionally HTTP Server and FTP Server)
 
 Here is an image of my current Daydream WebVR toolset:
 
-<img alt='Screenshot showing my developer tools' src='/img/posts/daydream/current-dev-tools.png' style='max-width: 540px;'>
+<img alt='Screenshot showing my developer tools' src='/img/posts/daydream/current-dev-tools.png' style='width: 100%; max-width: 540px;'>
 <!--![Screenshot showing the new Developer Options field](/img/posts/daydream/current-dev-tools.png)-->
 
 And here's the use case for each of these tools:
@@ -72,9 +72,9 @@ Chrome has recently added beta support for WebVR, but it has not yet made it out
 
 [Direct link to Dec 16th build, most recent as of 12/23](https://drive.google.com/file/d/0B8dt3TGgfXfiU0RKVGFNLVh0ME0/view?usp=drive_web)
 
-<img alt='Screenshot showing the initial File Commander Menu' src='/img/posts/daydream/file-commander-menu.jpg' style='max-width: 540px;'>
-<img alt='Screenshot showing the chromium apk' src='/img/posts/daydream/select-chromium-apk.jpg' style='max-width: 540px;'>
-<img alt='Screenshot of the install confirmation message for the apk' src='/img/posts/daydream/install-chromium.jpg' style='max-width: 540px;'>
+<img alt='Screenshot showing the initial File Commander Menu' src='/img/posts/daydream/file-commander-menu.jpg' style='width: 100%; max-width: 540px;'>
+<img alt='Screenshot showing the chromium apk' src='/img/posts/daydream/select-chromium-apk.jpg' style='width: 100%; max-width: 540px;'>
+<img alt='Screenshot of the install confirmation message for the apk' src='/img/posts/daydream/install-chromium.jpg' style='width: 100%; max-width: 540px;'>
 
 ## Step Five: Set Chromium Flags
 
@@ -85,9 +85,9 @@ Go to chrome://flags on your phone and enable the following options:
 * Enable Chrome VR
 * Enable Gamepad Extensions
 
-<img alt='Chrome Flag to Allow Invalid Certs' src='/img/posts/daydream/allow-invalid-certs.jpg' style='max-width: 540px;'>
-<img alt='Chrome Flag toEnable WebVR and Chrome VR' src='/img/posts/daydream/enable-webvr.jpg' style='max-width: 540px;'>
-<img alt='Chrome Flag toEnable Gamepad Extensions' src='/img/posts/daydream/gamepad-extensions.jpg' style='max-width: 540px;'>
+<img alt='Chrome Flag to Allow Invalid Certs' src='/img/posts/daydream/allow-invalid-certs.jpg' style='width: 100%; max-width: 540px;'>
+<img alt='Chrome Flag toEnable WebVR and Chrome VR' src='/img/posts/daydream/enable-webvr.jpg' style='width: 100%; max-width: 540px;'>
+<img alt='Chrome Flag toEnable Gamepad Extensions' src='/img/posts/daydream/gamepad-extensions.jpg' style='width: 100%; max-width: 540px;'>
 
 [For additional suggestions from the Chromium Team, read this](https://docs.google.com/document/d/1g02qHfX85vSRSOkWm9k33I0b7VuyN79md9U9t6MIa4E/edit)
 
@@ -100,8 +100,14 @@ Finally, test that you can render WebVR content by checking out this site using 
 ## Known Issues
 
 1.  Google Chrome is the only currently supported WebVR browser for Android
-2.  Most of the WebVR support is highly experimental and is actively being developed, which is why we need to sideload a Chromium nighly
-3.  If you enter Daydream mode accessing a WebVR app not served over https, you will receive a message: `Your connection to this site is not private. To exit VR mode at any time, remove this headset and push back.` Supposedly, this message disappears after 30 seconds and loads the app, but that did not work for me.
+2.  Most of the WebVR support is highly experimental and is actively being developed, which is why we need to sideload a Chromium nightly
+3.  If you enter Daydream mode accessing a WebVR app not served over https, you will receive a message: 
+
+```
+Your connection to this site is not private. To exit VR mode at any time, remove this headset and push back.
+``` 
+
+Supposedly, this message disappears after 30 seconds and loads the app, but that did not work for me.
 4.  ReactVR seems to offer only serve dev builds of WebVR over http, which cannot be viewed by daydream.
 5.  If you are trying to render a WebVR application off a development machine on your LAN and you have issues, consider turning off your local firewall on your development machine to check if that is interfering.
 
