@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 category: Operation Code
-title: 'Operation Code DC - August 2018'
+title: "Operation Code DC - August 2018"
 date: 2018-08-29T18:50:41.000Z
 author: spmcbride1201
 ---
@@ -40,9 +40,9 @@ If you didn't make the event, I've linked a recording of the talks and the slide
 
 I'll be making an announcement in the next week or so on [our Meetup page](https://www.meetup.com/en-AU/operation-code-washingtondc/), but if you can't wait for your next sweet sweet hit of Operation Code goodness, I suggest the following
 
-* Would you like to be able to talk to Operation Code members nationwide 24/7 via Slack? If so, head to the [Operation Code webpage](https://operationcode.org/join) to complete a short form and then get e-mailed an invite to our private Slack community, containing folks working in just about area of technology.
+- Would you like to be able to talk to Operation Code members nationwide 24/7 via Slack? If so, head to the [Operation Code webpage](https://operationcode.org/join) to complete a short form and then get e-mailed an invite to our private Slack community, containing folks working in just about area of technology.
 
-* Do you have any interest in speaking to our community? Does your DC company want to create an apprenticeship or direct hire opportunities for veterans and milspouses? Is there someone doing similar work that I should connect with? Do you have interest in helping to organize the chapter? If any of these are a yes, drop me a message!
+- Do you have any interest in speaking to our community? Does your DC company want to create an apprenticeship or direct hire opportunities for veterans and milspouses? Is there someone doing similar work that I should connect with? Do you have interest in helping to organize the chapter? If any of these are a yes, drop me a message!
 
-* Would you or your employer like to make a tax deductible to Operation Code DC? If so, check out [our OpenCollective](https://opencollective.com/operationcode-dc). Individuals can pledge $5 / month and companies can sponsor our chapter for $100 / month. We also accept flexible one-time donations.
-Til next time, ✌️✌️
+- Would you or your employer like to make a tax deductible to Operation Code DC? If so, check out [our OpenCollective](https://opencollective.com/operationcode-dc). Individuals can pledge $5 / month and companies can sponsor our chapter for $100 / month. We also accept flexible one-time donations.
+  Til next time, ✌️✌️
