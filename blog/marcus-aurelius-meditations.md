@@ -76,7 +76,7 @@ In particular, he tried to view his individual life in the context of the vastne
 
 The Romans had a tradition called the Triumph, where a successful military commander wore a vermillion toga, applied red facepaint, and rode in a chariot as the symbolic representation of Jupiter or Mars. A slave stood behind the victorious general, holding a crown above his head and repeatedly whispering, "Remember you are mortal."
 
-Viewing himself as small in the vastness of time and space, Marcus Aurelius deconstructed himself to achieve a state of detachment. This defanged the temptations of praise or vanity and helped him weild his authority in accordance with his moral philosophy and a detached rational analysis of the problem at hand.
+Viewing himself as mortal, small relative to the vastness of time and space, Marcus Aurelius deconstructed himself and achieved a state of detachment. This defanged the temptations of praise or vanity and helped him wield his authority in accordance with his moral philosophy and a detached rational analysis of the problem at hand.
 
 ## Final Thoughts
 
