@@ -7,6 +7,8 @@ author: spmcbride1201
 slug: marcus-aurelius-meditations/
 ---
 
+![A bust of Marcus Aurelius](/img/posts/marcus-aurelius-meditations/Marcus-Aurelius.jpg)
+
 Ancient Rome has always fascinated me. On the one hand, it created the most professional pre-modern military and conquered much of the known world. On the other hand, it embraced and expanded the Greek intellectual tradition. Janus-faced, Rome offered both Caesar and Cicero.
 
 Out of the Emperors, Marcus Aurelius likely best unifies those seemingly disparate aspects of Roman Civilization. Recently I read his _Meditations_, which are his private writings while serving as Emperor. They are effectively the diary of the most powerful man of the Ancient World, and they focus on his personal morality, his sense of humility based on his self-conception as a mortal relatively insignificant compared to infinite time and space, and his obligation to lead a just life based on the philosophy of the stoics. I found these writings to be quite beautiful and uplifting, and I want to share a few of the key themes.
