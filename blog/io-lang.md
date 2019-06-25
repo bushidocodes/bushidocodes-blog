@@ -470,7 +470,7 @@ The source code for these examples can be found [in this GitHub repo.](https://g
 
 ## Conclusion
 
-Io is like a 1960s Volkswagen Beatle. It's designed by an enthusiast and optimized to allow other enthusiasts to get under the hood and tinker. This is a breath of fresh air considering many larger languages are like modern luxury cars that can only be serviced by licensed technicians.
+Io is like a 1960s Volkswagen Beetle. It's designed by an enthusiast and optimized to allow other enthusiasts to get under the hood and tinker. This is a breath of fresh air considering many larger languages are like modern luxury cars that can only be serviced by licensed technicians.
 
 Working with Io taught me that a language doesn't need much syntax when the underlying design is strong. Objects and message passing are powerful, and the language is an absolute blast to learn. So while Io has not achieved mainstream success, I think that's fine. It's pleasurable to work with and rewards the programmer with all sorts of insights along the way.
 
