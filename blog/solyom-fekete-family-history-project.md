@@ -2,7 +2,7 @@
 category: History
 templateKey: blog-post
 title: Sólyom Fekete Family History Project
-date: 2013-07-07T19:01:59-05:00 
+date: 2013-07-07T19:01:59-05:00
 author: spmcbride1201
 slug: solyom-fekete-family-history-project/
 coverimage: /img/posts/solyomFeketeCover.jpg

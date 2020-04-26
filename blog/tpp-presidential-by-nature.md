@@ -2,7 +2,7 @@
 category: Fun
 templateKey: blog-post
 title: TPP - Presidential by Nature
-date: 2015-06-13T13:21:59-05:00   
+date: 2015-06-13T13:21:59-05:00
 author: spmcbride1201
 slug: tpp-presidential-by-nature/
 coverimage: /img/posts/obama_tpp_041015.jpg

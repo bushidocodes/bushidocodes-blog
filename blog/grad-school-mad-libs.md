@@ -12,13 +12,13 @@ coverimage: /img/posts/ticonderogas.jpg
 
 A 33-year-old \_\_(A)\_\_ walks into a computer science program and \_\_(B)\_\_
 
-A: ~~Programmer~~. ~~Intellectual Lightweight~~. ~~Impostor~~. ~~F***~~. Wannabe.
+A: ~~Programmer~~. ~~Intellectual Lightweight~~. ~~Impostor~~. ~~F\*\*\*~~. Wannabe.
 
-B: ~~Embarrasses himself~~. ~~Fails out~~. ~~F***s it up~~. Makes the most of what he’s got?
+B: ~~Embarrasses himself~~. ~~Fails out~~. ~~F\*\*\*s it up~~. Makes the most of what he’s got?
 
-Ever since walking away from my comfortable software engineer paychecks and to go back to school to earn a Computer Science Masters, I’ve found myself often playing a tortuous game of Mad Libs. 
+Ever since walking away from my comfortable software engineer paychecks and to go back to school to earn a Computer Science Masters, I’ve found myself often playing a tortuous game of Mad Libs.
 
-This sort of emotional self-flagellation is a skill that I’ve mastered over the years. 
+This sort of emotional self-flagellation is a skill that I’ve mastered over the years.
 
 It’s why managers only feel the need to play “good cop.” The “bad cop” is inside, reciting a litany of failures and weaknesses and swinging a mallet engraved with yeahbut whenever the inspiration or motivation groundhogs pop out of the ground.
 

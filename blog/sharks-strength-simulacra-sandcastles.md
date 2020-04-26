@@ -2,7 +2,7 @@
 category: Poetry
 templateKey: blog-post
 title: Sharks, Strength, Simulacra, Sandcastles
-date: 2019-05-09T13:43:59-05:00 
+date: 2019-05-09T13:43:59-05:00
 author: spmcbride1201
 slug: sharks-strength-simulacra-sandcastles/
 ---
@@ -20,4 +20,4 @@ Ours is the Grand Masquerade <br/>
 Externally wrapping our Simulacra in the languages and frameworks of the season <br/>
 Internally grappling with the cost of keeping up <br/>
 
-Lo, how we distract ourselves with our digital sandcastles 
+Lo, how we distract ourselves with our digital sandcastles

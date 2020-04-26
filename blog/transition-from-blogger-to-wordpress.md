@@ -2,7 +2,7 @@
 category: Personal
 templateKey: blog-post
 title: Transition from Blogger to WordPress
-date: 2013-07-05T10:02:59-05:00 
+date: 2013-07-05T10:02:59-05:00
 author: spmcbride1201
 permalike: transition-from-blogger-to-wordpress/
 coverimage: /img/posts/bloggerToWordpressCover.png
@@ -26,7 +26,7 @@ Thanks for your thoughts and suggestions!
 
 <strong>Update One (July 6, 2013):</strong>
 
-Shortly after writing this last post, I was inspired to do some hands-on experimentation with WordPress' capabilities. I went ahead and created a Wordpress.com account to understand the features and economics of using WordPress' commercial offerings. Essentially WordPress.com is the closest equivalent of Blogger. A new user signs up on the site and can start blogging for free. The blog is hosted on WordPress servers, and the administration is handled through a simplified subset of the WordPress open-source software. This helps with ease of use, which makes it a good solution for bloggers less interested in administering their own IT infrastructure. The downsides of this are that the software does not have all of the options available in the free open-source software. If you want to have advanced features like having your own domain name (e.g. spmcb.com instead of spmcb.wordpress.com) or altering the cascading style sheets (CSS) of a WordPress theme, then you essentially are pushed to purchase the WordPress Premium package for $99 per year.
+Shortly after writing this last post, I was inspired to do some hands-on experimentation with WordPress' capabilities. I went ahead and created a Wordpress.com account to understand the features and economics of using WordPress' commercial offerings. Essentially WordPress.com is the closest equivalent of Blogger. A new user signs up on the site and can start blogging for free. The blog is hosted on WordPress servers, and the administration is handled through a simplified subset of the WordPress open-source software. This helps with ease of use, which makes it a good solution for bloggers less interested in administering their own IT infrastructure. The downsides of this are that the software does not have all of the options available in the free open-source software. If you want to have advanced features like having your own domain name (e.g. spmcb.com instead of spmcb.wordpress.com) or altering the cascading style sheets (CSS) of a WordPress theme, then you essentially are pushed to purchase the WordPress Premium package for \$99 per year.
 
 After doing some experimentations with WordPress.com, I came to the conclusion that I would really prefer to be able to have my own hosted web server running WordPress software. This would allow me complete access to the web stack, including scripting languages, which would allow me to achieve the full functionality that I achieved through my hand-built personal website. Since I was ideally looking for a way to combine the ease of use of a drag-and-drop WYSIWYG interface and prebuilt themes with the ability to drill down and write custom code for web apps, WordPress on my own hosted web server seemed to make really good sense. This value proposition clearly appeals to a wide variety of folks as well, as a <a href="https://www.forbes.com/sites/jjcolao/2012/09/05/the-internets-mother-tongue/" target="_blank">2012 Forbes article cited that WordPress now runs over 60 million websites</a>.
 

@@ -2,7 +2,7 @@
 category: Coding
 templateKey: blog-post
 title: Regular Expressions Reference
-date:  2016-11-06T22:11:59-05:00
+date: 2016-11-06T22:11:59-05:00
 author: spmcbride1201
 slug: regex-reference/
 coverimage: /img/posts/wazup.jpg
@@ -54,9 +54,9 @@ Often this is an undesired behavior.
 
 To explicitly only match full matches and ignore partial matches, you can use anchor characters:
 
-* `^` limits true to strings that start with an exact match of the regex without any preceeding text
-* `$` limits true to strings that have no text following the match of the regex
-* `\b` limits true to words within strings that have no characters immediately preceeding or following the match of the regex
+- `^` limits true to strings that start with an exact match of the regex without any preceeding text
+- `$` limits true to strings that have no text following the match of the regex
+- `\b` limits true to words within strings that have no characters immediately preceeding or following the match of the regex
 
 `/^boat$|^ship$/` //true for "boat or "ship" but false for "battleship" or "rowboat" or "boatswain" or "shipping"
 
@@ -104,19 +104,19 @@ _Note that modifiers are language specific, so double check the syntax for these
 
 ## Special Characters and Metacharacters
 
-* `\s` matches whitespace characters (spaces, tabs, newlines)
-* `\w` matches word-like characters (alphanumeric)
-* `\d` matches any number
-* `.` matches any character other than newline
-* `*` matches the preceeding pattern zero or more times
-* `+` matches the preceeding pattern one or more times
-* `?` makes the preceeding pattern optional
+- `\s` matches whitespace characters (spaces, tabs, newlines)
+- `\w` matches word-like characters (alphanumeric)
+- `\d` matches any number
+- `.` matches any character other than newline
+- `*` matches the preceeding pattern zero or more times
+- `+` matches the preceeding pattern one or more times
+- `?` makes the preceeding pattern optional
 
 Many of the special characters have a shorthand NOT notation that uses the capitalized version of the normal special character
 
-* `\D` matches anything but a number, shorthand for `[^\d]`
-* `\S` matches anything but whitespace, shorthand `[^\s]`
-* `\W` matches anything but an alpha-numeric character, shorthand `[^\w]`
+- `\D` matches anything but a number, shorthand for `[^\d]`
+- `\S` matches anything but whitespace, shorthand `[^\s]`
+- `\W` matches anything but an alpha-numeric character, shorthand `[^\w]`
 
 _If you want to literally match a character that is used as a special or metacharacter, you can escape the character with a backslash._
 
@@ -199,7 +199,7 @@ If you are using capture groups, you need to mark all uses of paratheses that ar
 
 ## Additional Resources for JavaScript
 
-* [CodeSchool's Breaking the Ice with Regular Expressions Course](https://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions)
-* [Eloquent JavaScript, Chapter 9: Regular Expressions](https://eloquentjavascript.net/09_regexp.html)
-* [JavaScript RegExp on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
-* [RegEx 101](https://regex101.com/)
+- [CodeSchool's Breaking the Ice with Regular Expressions Course](https://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions)
+- [Eloquent JavaScript, Chapter 9: Regular Expressions](https://eloquentjavascript.net/09_regexp.html)
+- [JavaScript RegExp on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+- [RegEx 101](https://regex101.com/)

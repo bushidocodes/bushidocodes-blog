@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 category: Opinion
-title: 'HQ2 at Crystal City'
+title: "HQ2 at Crystal City"
 date: 2018-11-13T18:50:41.000Z
 author: spmcbride1201
 slug: hq2-at-crystal-city

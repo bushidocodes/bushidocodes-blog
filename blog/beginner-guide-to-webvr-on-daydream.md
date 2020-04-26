@@ -59,10 +59,10 @@ Here is an image of my current Daydream WebVR toolset:
 
 And here's the use case for each of these tools:
 
-* Chromium - Display and Render WebVR content. See section below.
-* File Commander - Access Android's Linux file system to sideload Android Apps (apks) and create folders for transferring and serving WebVR apps. [Download](https://play.google.com/store/apps/details?id=com.mobisystems.fileman)
-* Ftp server - Simple Tool for allowing your dev machine to access your Android filesystem via ftp. [Download](https://play.google.com/store/apps/details?id=com.theolivetree.ftpserver)
-* Simple HTTP Server - Simple HTTP server that allows your Pixel to directly serve your WebVR apps to Chromium via localhost. [Download](https://play.google.com/store/apps/details?id=jp.ubi.common.http.server)
+- Chromium - Display and Render WebVR content. See section below.
+- File Commander - Access Android's Linux file system to sideload Android Apps (apks) and create folders for transferring and serving WebVR apps. [Download](https://play.google.com/store/apps/details?id=com.mobisystems.fileman)
+- Ftp server - Simple Tool for allowing your dev machine to access your Android filesystem via ftp. [Download](https://play.google.com/store/apps/details?id=com.theolivetree.ftpserver)
+- Simple HTTP Server - Simple HTTP server that allows your Pixel to directly serve your WebVR apps to Chromium via localhost. [Download](https://play.google.com/store/apps/details?id=jp.ubi.common.http.server)
 
 ## Step Four: Download Latest Chromium Nightly
 
@@ -80,10 +80,10 @@ Chrome has recently added beta support for WebVR, but it has not yet made it out
 
 Go to chrome://flags on your phone and enable the following options:
 
-* Allow invalid certificates for resources loaded from localhost
-* Enable WebVR
-* Enable Chrome VR
-* Enable Gamepad Extensions
+- Allow invalid certificates for resources loaded from localhost
+- Enable WebVR
+- Enable Chrome VR
+- Enable Gamepad Extensions
 
 <img alt='Chrome Flag to Allow Invalid Certs' src='/img/posts/daydream/allow-invalid-certs.jpg' style='width: 100%; max-width: 540px;'>
 <img alt='Chrome Flag toEnable WebVR and Chrome VR' src='/img/posts/daydream/enable-webvr.jpg' style='width: 100%; max-width: 540px;'>
@@ -101,13 +101,14 @@ Finally, test that you can render WebVR content by checking out this site using 
 
 1.  Google Chrome is the only currently supported WebVR browser for Android
 2.  Most of the WebVR support is highly experimental and is actively being developed, which is why we need to sideload a Chromium nightly
-3.  If you enter Daydream mode accessing a WebVR app not served over https, you will receive a message: 
+3.  If you enter Daydream mode accessing a WebVR app not served over https, you will receive a message:
 
 ```
 Your connection to this site is not private. To exit VR mode at any time, remove this headset and push back.
-``` 
+```
 
 Supposedly, this message disappears after 30 seconds and loads the app, but that did not work for me.
+
 4.  ReactVR seems to offer only serve dev builds of WebVR over http, which cannot be viewed by daydream.
 5.  If you are trying to render a WebVR application off a development machine on your LAN and you have issues, consider turning off your local firewall on your development machine to check if that is interfering.
 
@@ -119,9 +120,9 @@ Because off-the-shelp boilerplate from A-Frame and ReactVR seems to only offer l
 
 Possible solutions for this problem include:
 
-* Modifying the existing boilerplate to serve over https using self-signed SSL certs that you create or snag from someone else, like [https://github.com/Spaciblo/spaciblo-core/tree/master/test_certs](here)
-* Installing adb port forwarding, which redirects localhost resolution on the Pixel to the range of localhost ports on the development machine
-* Manually or using a script to push code to an ftp server run on the Pixel headset itself.
+- Modifying the existing boilerplate to serve over https using self-signed SSL certs that you create or snag from someone else, like [https://github.com/Spaciblo/spaciblo-core/tree/master/test_certs](here)
+- Installing adb port forwarding, which redirects localhost resolution on the Pixel to the range of localhost ports on the development machine
+- Manually or using a script to push code to an ftp server run on the Pixel headset itself.
 
 An ideal solution would allow remote debugging of the WebVR application running on the Pixel in Daydream mode to be able to capture performance data to ensure 60fps. For this to be accurate, screen mirroring will likely have to be disabled.
 
@@ -131,7 +132,7 @@ When your app is ready for deployment, you will have to register your server wit
 
 ## Further Reading
 
-* [Oculus WebVR](https://techcrunch.com/2016/10/06/oculus-webvr/)
-* [ReactVR Pre-release](https://developer.oculus.com/blog/introducing-the-react-vr-pre-release/)
-* [Enabling On-device Developer Options](https://developer.android.com/studio/run/device.html#developer-device-options)
-* [Get Started with Remote Debugging Android Devices](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/)
+- [Oculus WebVR](https://techcrunch.com/2016/10/06/oculus-webvr/)
+- [ReactVR Pre-release](https://developer.oculus.com/blog/introducing-the-react-vr-pre-release/)
+- [Enabling On-device Developer Options](https://developer.android.com/studio/run/device.html#developer-device-options)
+- [Get Started with Remote Debugging Android Devices](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/)

@@ -2,26 +2,28 @@
 category: programming
 templateKey: blog-post
 title: The Common Business-Oriented Language (COBOL)
-date: 2019-05-17T09:00:00-05:00 
+date: 2019-05-17T09:00:00-05:00
 author: spmcbride1201
 slug: cobol-lang/
 coverimage: /img/posts/cobol-lang/GraceHopperCobol.jpg
 ---
+
 I am not a professional mainframe developer. I'm just a polyglot programmer backpacking across different language ecosystems with a sense of curiosity and the software equivalent of a Rick Steves' travel guide: [Bruce A. Tate](https://twitter.com/redrapids)’s [Seven Languages in Seven Weeks](https://pragprog.com/book/btlang/seven-languages-in-seven-weeks). In previous posts, [I introduced my motivations for this project](/programming-language-tourism) and [discussed the Ruby programming language](/ruby-lang).
 
-This week, I've decided to go off-script and investigate a language that was definitely not on the tour. 
+This week, I've decided to go off-script and investigate a language that was definitely not on the tour.
 
 If you want to keep track of my travels as I explore other languages such as Io, Prolog, Scala, Erlang, Clojure, Haskell, and others, [follow me on Twitter](https://twitter.com/bushidocodes).
 
 ![Grace teaching COBOL](/img/posts/cobol-lang/GraceHopperCobol.jpg)
 
-[COBOL](https://en.wikipedia.org/wiki/COBOL) is often unfairly maligned by developers, most of whom haven't tried the language. It is the [archetype of "legacy technology,"](https://blog.codinghorror.com/cobol-everywhere-and-nowhere/) and often contrasted unfavorably with the [C programming language](https://en.wikipedia.org/wiki/C_(programming_language)). This sort of comparison is silly for several reasons. First, COBOL is a standardized version of [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)'s [FLOW-MATIC](http://s3data.computerhistory.org/brochures/univac.flowmatic.1957.102646140.pdf), which pioneered the idea of high-level languages and compiler theory in 1955, some 18 years before the 1972 release of C. These languages are entirely different generations. Additionally, the target audiences and intended use cases for C and COBOL are quite different. C was targeted at engineers as a systems programming language suitable for building the UNIX operating system and ecosystem of utilities. COBOL was targeted at a general audience as a high-level scripting language for the automation of business processes.
+[COBOL](https://en.wikipedia.org/wiki/COBOL) is often unfairly maligned by developers, most of whom haven't tried the language. It is the [archetype of "legacy technology,"](https://blog.codinghorror.com/cobol-everywhere-and-nowhere/) and often contrasted unfavorably with the [C programming language](<https://en.wikipedia.org/wiki/C_(programming_language)>). This sort of comparison is silly for several reasons. First, COBOL is a standardized version of [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)'s [FLOW-MATIC](http://s3data.computerhistory.org/brochures/univac.flowmatic.1957.102646140.pdf), which pioneered the idea of high-level languages and compiler theory in 1955, some 18 years before the 1972 release of C. These languages are entirely different generations. Additionally, the target audiences and intended use cases for C and COBOL are quite different. C was targeted at engineers as a systems programming language suitable for building the UNIX operating system and ecosystem of utilities. COBOL was targeted at a general audience as a high-level scripting language for the automation of business processes.
 
 The software engineering profession needs to drop the snark and reassess the critical role of COBOL in popularizing programming outside of a narrow clique of mathematicians, engineers, and researchers. The vision of [CS for All](https://obamawhitehouse.archives.gov/blog/2016/01/30/computer-science-all) was pioneered by [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper) through FLOW-MATIC and COBOL, and self-taught developers, mass secondary education of Computer Science, and the emergence of coding bootcamps as an alternative to a four-year college degree all echo Grace's democratic vision for COBOL.
 
 At its core, COBOL is a static [weakly-typed](http://legstar.blogspot.com/2009/11/cobol-is-weakly-typed.html) high-level scripting language that is designed to be approachable to non-specialists by borrowing ideas from natural human language. It is the dominant language for commercial and government applications running on [mainframes](https://en.wikipedia.org/wiki/Mainframe_computer), and it is typically used to write small "mainframe jobs" that are architecturally similar to cloud-based [serverless](https://en.wikipedia.org/wiki/Serverless_computing) functions.
 
 ## History
+
 In the earliest days, computers were designed by electrical engineers, used by mathematicians, and focused on scientific research and complex engineering problems such as the design of the nuclear bomb.
 
 However, in 1952, a language designer named [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper) attended the Association for Computing Machinery conference and presented the idea of using "compiling routines" (now called compilers) to create high-level programming languages approachable to non-mathematicians. According to [the associated journal article](https://worldpowersystems.com/CA/Women-computers/Hopper%20The%20education%20of%20a%20computer.pdf), the point of compilers was to advance the goal of "replacing, as far as possible, the human brain by an electronic digital computer." While previous advances in machine code had automated the job of [human "computers"](https://www.history.com/news/human-computers-women-at-nasa), writing [machine code](https://en.wikipedia.org/wiki/Machine_code) was still so complicated that it effectively required specialists and mathematicians. By arguing for the creation of [compilers](https://en.wikipedia.org/wiki/Compiler) that could translate higher-level languages into uniform subroutines of machine code, Grace sought to democratize the creation of software by eliminating the need for such specialists.
@@ -38,9 +40,9 @@ In short, compilers and high-level languages will democratize programming, creat
 
 While these early languages enjoyed success and popularity, they were proprietary and therefore limited to running on a single vendor's computer architecture. This created "lock-in" and prevented the ability to move between vendors. As the the world's largest consumer of computers, the U.S. Department of Defense began to advocate for the creation of a general-purpose programming language controlled by a neutral standards body. This would drive computer manufacturers to build compilers against this common standard and make software source code portable across systems via recompilation, broadly benefitting consumers and reducing anti-competitive lock-in. This resulted in the 1959/1960 [Conference on Data Systems Languages (CODASYL)](https://en.wikipedia.org/wiki/CODASYL), which studied existing high-level languages and defined the standard for the first-ever Common Business-Oriented Language. It was called COBOL for short. [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper) participated in this standardization process, and the resulting standard drew primarily from her FLOW-MATIC design.
 
-Once defined, the Department of Defense mandated that vendors competing for military contracts support COBOL, which immediately made the language a de-facto industry standard. This was later formalized when the language became an ANSI and ISO standard. 
+Once defined, the Department of Defense mandated that vendors competing for military contracts support COBOL, which immediately made the language a de-facto industry standard. This was later formalized when the language became an ANSI and ISO standard.
 
-Early versions of the language ran slowly, but compilers sped up significantly between 1962 and 1964, leading IBM and the other computer vendors to discontinue their alternative high-level languages and encourage adoption of the standard. By 1970, COBOL became the most popular programming language in the world. In 1997, [Gartner estimated that there were 200 billion lines of COBOL in existence](https://fcw.com/Articles/2009/07/13/TECH-COBOL-turns-50.aspx). 
+Early versions of the language ran slowly, but compilers sped up significantly between 1962 and 1964, leading IBM and the other computer vendors to discontinue their alternative high-level languages and encourage adoption of the standard. By 1970, COBOL became the most popular programming language in the world. In 1997, [Gartner estimated that there were 200 billion lines of COBOL in existence](https://fcw.com/Articles/2009/07/13/TECH-COBOL-turns-50.aspx).
 
 Over the decades, COBOL has been extended via proprietary compilers and enhanced via updates to the language specification. Recent versions have included classes, new data-types, and collections. However, given the size and age of the COBOL ecosystem, most production code likely still runs the older COBOL-85 standard.
 
@@ -51,21 +53,23 @@ COBOL is mostly used in the context of traditional mainframe computing, which is
 Traditional mainframe computing is used for non-interactive "big data" workloads. Some applications are "batch," meaning computational work is performed against a large collection of records. Given such an application might entail generating monthly invoices for all customers of a Fortune 500 company, batch takes a while to complete. Other applications are real-time and event-driven, such as [VisaNet](https://en.wikipedia.org/wiki/Transaction_Processing_Facility), the mainframe system that processes Visa credit card transactions. In this example, swiping a Visa card triggers an event that causes computation across a cluster of mainframes.
 
 While the mainframe-specific terms are unfamiliar, the core architecture of this system resembles many modern systems running on Azure or AWS:
-* Customer data is structured as records in high-speed light-weight data stores
-* Computation is modularized into small pieces with common interfaces and combined together using an orchestration layer
-* The orchestration layer steps through an orchestration script step-by-step, instructing modules of code to run with specific input data and environment variables, monitoring and correcting for errors, and advancing to the next step when a module runs to completion
-* Each module is kept focused, lean, and simple. It resembles a simple script internally broken into functions. It executes a small focused bit of business logic based on environment variables set by the orchestration engine and returns the results directly or indirectly via persistent storage.
+
+- Customer data is structured as records in high-speed light-weight data stores
+- Computation is modularized into small pieces with common interfaces and combined together using an orchestration layer
+- The orchestration layer steps through an orchestration script step-by-step, instructing modules of code to run with specific input data and environment variables, monitoring and correcting for errors, and advancing to the next step when a module runs to completion
+- Each module is kept focused, lean, and simple. It resembles a simple script internally broken into functions. It executes a small focused bit of business logic based on environment variables set by the orchestration engine and returns the results directly or indirectly via persistent storage.
 
 In mainframes, these modules are called jobs. The orchestration layer is a mainframe system controlled via a specialized [Job Control Language](https://en.wikipedia.org/wiki/Job_Control_Language). Disk and mainframe datasets are used to store intermediate and output data.
 
 In serverless computing, these modules are serverless functions. The orchestration layer is likely a combination of an API gateway and pub/sub messages passed through a notification service. Object storage or NoSQL databases are used to store intermediate and output data.
 
-Following this analogy, COBOL is essentially a purpose-built language for serverless functions. 
+Following this analogy, COBOL is essentially a purpose-built language for serverless functions.
 
 ## How to run the language
+
 If you just wish to run my code samples, I suggest clicking the links below each block to open a REPL environment pre-populated with my code. Unfortunately, REPL.it does not support COBOL, so I've had to instead use [CodingGround](https://www.tutorialspoint.com/codingground.htm), which does not support embedding into this page or the execution of interactive console programs such as my guessing game. Additionally, the PrismJS library that powers syntax highlighting on this page does not understand COBOL, so my code samples remain blocks of text. If I find solutions to either of these issues, I will update this post.
 
-If you wish to dive further and perhaps run my COBOL examples locally, I suggest installing [GnuCOBOL](https://sourceforge.net/projects/open-cobol/). This compiler is undergoing a rewrite from C to C++ (offered in their experimental 3.0 branch), but I've stuck with the stable 2.2 release to benefit from their [excellent documentation](https://open-cobol.sourceforge.io/guides/GnuCOBOL%202.2%20NOV2017%20Programmers%20Guide%20(US%20Letter).pdf).
+If you wish to dive further and perhaps run my COBOL examples locally, I suggest installing [GnuCOBOL](https://sourceforge.net/projects/open-cobol/). This compiler is undergoing a rewrite from C to C++ (offered in their experimental 3.0 branch), but I've stuck with the stable 2.2 release to benefit from their [excellent documentation](<https://open-cobol.sourceforge.io/guides/GnuCOBOL%202.2%20NOV2017%20Programmers%20Guide%20(US%20Letter).pdf>).
 
 On my Debian-based system, I was able to install open-cobol using `sudo apt-get install open-cobol`
 
@@ -74,15 +78,16 @@ Then I compiled source code by running `cobc -xj -free myfile.cob`
 ## Impressions of the Language
 
 ### Dumping Legacy Idioms
+
 As a sixty year old language, COBOL has many strange idioms. I've chosen to dump conventions that I consider made redundant by modern tools and software engineering practices to make COBOL appear similar to other languages.
 
 Traditionally, COBOL compilers assign semantic meaning to particular column positions:
 
-* Columns 1-6 - A six digit line number
-* Column 7 - an Asterisk (*) signifies a comment, a Hyphen (-) signifies that this line continues the previous line 
-* Columns 8-11	"Area A" - Language constructs that indicate scope (COBOL divisions, sections, paragraphs and some special entries) must begin here
-* Columns 12-72 "Area B" - General use for COBOL statements
-* Columns 73-80 "Identification Area" - An additional 8 characters that can be configured to be used for COBOL statements.
+- Columns 1-6 - A six digit line number
+- Column 7 - an Asterisk (\*) signifies a comment, a Hyphen (-) signifies that this line continues the previous line
+- Columns 8-11 "Area A" - Language constructs that indicate scope (COBOL divisions, sections, paragraphs and some special entries) must begin here
+- Columns 12-72 "Area B" - General use for COBOL statements
+- Columns 73-80 "Identification Area" - An additional 8 characters that can be configured to be used for COBOL statements.
 
 This format is based around the format of an IBM punched card, but the convention has long outlived this medium. Line numbers are mostly useful for GOTO statements, which are generally harmful. Being limited to 72 columns requires complex statements to unnecessarily flow across several continuation lines. Assigning semantic meaning to special characters in column 7 is esoteric and confusing. The COBOL 2002 standard introduced "free-form code," which jettisons these conventions. I use this format throughout this post, but some COBOL compilers (such as IBM Enterprise COBOL) do not support this feature.
 
@@ -92,7 +97,6 @@ Taken together, this:
 ![](/img/posts/cobol-lang/StructuredCobol.jpg)
 becomes this:
 ![](/img/posts/cobol-lang/FreeCobol.jpg)
-
 
 ### Source Code as a single file
 
@@ -114,6 +118,7 @@ procedure division.
 display greeting.
 stop run.
 ```
+
 [Run at CodingGround](http://tpcg.io/xMIxIZ)
 
 ### Variables as Records
@@ -124,7 +129,6 @@ Let's breakdown the scary-looking line we disregarded earlier:
 1, greeting pic x(12) value is "Hello World".
 ```
 
-
 In TypeScript, this would be roughly equivalent to the following:
 
 ```js
@@ -132,14 +136,16 @@ let greeting: string = "Hello World";
 ```
 
 #### Picture Clauses
+
 In most languages, variables have a discrete type, such as a `string`, `integer`, `float`, or `boolean`. COBOL handles types quite a bit differently, so getting comfortable with COBOL's type system is likely the hardest part of learning the language.
 
 In COBOL, every variable is a `record`, which is effectively a sequence of characters. `Records` are typed using a `picture clause`, a type pattern which provides typings for a record character-by-character. This means that each character within a record is individually typed using the following values:
-* Letter (A)
-* Number (9)
-* Letter or Number (X)
-* +/- sign (S)
-* decimal point(V)
+
+- Letter (A)
+- Number (9)
+- Letter or Number (X)
+- +/- sign (S)
+- decimal point(V)
 
 These patterns are pre-pended by the keyword `picture` (or `pic` for short)
 
@@ -147,13 +153,13 @@ These patterns are pre-pended by the keyword `picture` (or `pic` for short)
 
 Is your mind blown? That's okay! We'll go through examples to make sure this is clear. The concept is simple, but it takes some getting used to.
 
-* `pic 9` defines a single character capable of storing 0 - 9 only. It does not have a character indicating a sign or a decimal, so it is an integer between 0 - 9. Given that this really is a character, not an actual number, the program internally casts this value to an internal number format when it is used in a mathematical operation. We probably can cast this value once at compile-time using the usage clause such as `pic 9 usage comp`, which is short for `pic 9 usage computational`. We'll discuss this further later!
+- `pic 9` defines a single character capable of storing 0 - 9 only. It does not have a character indicating a sign or a decimal, so it is an integer between 0 - 9. Given that this really is a character, not an actual number, the program internally casts this value to an internal number format when it is used in a mathematical operation. We probably can cast this value once at compile-time using the usage clause such as `pic 9 usage comp`, which is short for `pic 9 usage computational`. We'll discuss this further later!
 
-* `pic s9999v9999` is a signed decimal with +/- in the first character, four whole number digits, a decimal point, and four fractional digits. It stores float values between -9999.9999 and 9999.9999. As in the last example, we likely want to add the usage clause to cast this to an actual numeric representation using `pic s9999v9999 usage comp`.
+- `pic s9999v9999` is a signed decimal with +/- in the first character, four whole number digits, a decimal point, and four fractional digits. It stores float values between -9999.9999 and 9999.9999. As in the last example, we likely want to add the usage clause to cast this to an actual numeric representation using `pic s9999v9999 usage comp`.
 
-* `pic x(10)` is a string of ten characters containing a mix of letters and numbers. This is a shorthand notation equivalent to `pic xxxxxxxxxx`.
+- `pic x(10)` is a string of ten characters containing a mix of letters and numbers. This is a shorthand notation equivalent to `pic xxxxxxxxxx`.
 
-* `pic a(5)` is a string of five English letters (A-Z and spaces). This is a shorthand notation equivalent to `pic aaaaa`.
+- `pic a(5)` is a string of five English letters (A-Z and spaces). This is a shorthand notation equivalent to `pic aaaaa`.
 
 So the picture clause acts as the type for our record. It allows us to declare variables like the following TypeScript example, but we still have to learn a few more concepts to be able to initialize the variable with a value.
 
@@ -167,7 +173,7 @@ When declaring variables (records) in memory, we can initialize the variable wit
 
 For our Hello World Example, this is fairly straightforward, but the use of words like `value is` might seem verbose and strange if you're used to just using an `=`.
 
-`pic x(12) value is "Hello World"` defines a string with twelve characters equal to "Hello World ". 
+`pic x(12) value is "Hello World"` defines a string with twelve characters equal to "Hello World ".
 
 There's one problem though. Notice the trailing space due to the fact that the literal "Hello World" is only 11 characters. Records have a fixed length. When we assign values to records, they are padded or truncated to fit as best as they can.
 
@@ -183,18 +189,19 @@ In the case of an optimization algorithm, we likely would want to set a variable
 
 `pic 9999 value high-value` declares a signed float and initializes it as 9999
 
-#### Level Numbers and Complex Structures 
+#### Level Numbers and Complex Structures
 
 So we've almost covered the basics of COBOL types. One more aspect to go!
 
-If you refer to the statement  `1, greeting pic x(12) value is "Hello World".`, you should now understand all of the parts other than the `1,` at the beginning of the statement. 
+If you refer to the statement `1, greeting pic x(12) value is "Hello World".`, you should now understand all of the parts other than the `1,` at the beginning of the statement.
 
 This is a `level number` and it is used to express hierarchy among `records`. Hierarchical records are used to build more complex data structures, similar to structs in C, objects/Maps in JavaScript, or Hashes in Python.
 
 All top level variables / `records` have the level number 01. Anything from 02 to 49 indicates a child element that is part of a preceding record with a lower level number. However, there are a few best practices to keep in mind:
-* Increment `level numbers` by five to allow space for future intermediate levels 
-* Indent `records` to make this structure more obvious
-* Align `picture clauses` across all levels of the hierarchy
+
+- Increment `level numbers` by five to allow space for future intermediate levels
+- Indent `records` to make this structure more obvious
+- Align `picture clauses` across all levels of the hierarchy
 
 For example, imagine that we were building a special data structure for storing the personnel records of servicemen and servicewomen in the U.S. military, such as Admiral Grace Hopper. We'd have stuff like name, rank, and social-security number. Let's just start with name and social-security number for now.
 
@@ -215,12 +222,12 @@ This is roughly equivalent to the following TypeScript interface.
 
 ```js
 export interface NameObject {
-   givenName: string;
-   familyName: String;
+  givenName: string;
+  familyName: String;
 }
 export interface ServiceRecord {
-    ssn: string;
-    name: NameObject;
+  ssn: string;
+  name: NameObject;
 }
 ```
 
@@ -258,7 +265,7 @@ export interface ServiceRecord {
 }
 ```
 
-It's likely that we'll want to use if statements to check if someone is an officer, warrant, or enlisted in our program. To do this cleanly, we can use the special `level number` 88, which is reserved for `conditional names`. These are effectively boolean values that get precomputed whenever a record is initialized or updated. These resolve to true if the record matches one of the values listed after the `conditional name`. 
+It's likely that we'll want to use if statements to check if someone is an officer, warrant, or enlisted in our program. To do this cleanly, we can use the special `level number` 88, which is reserved for `conditional names`. These are effectively boolean values that get precomputed whenever a record is initialized or updated. These resolve to true if the record matches one of the values listed after the `conditional name`.
 
 ```powershell
 01 ServiceRecord.
@@ -284,9 +291,11 @@ It's customary to salute commissioned officers and warrant officers. The logic f
 if ValidRankType and (CommissionedOfficer or WarrantOfficer)
    perform salute
 ```
+
 ![](https://media.giphy.com/media/umXZ6MNman8TC/giphy.gif)
 
 #### Why so hard?
+
 So you might be wondering why COBOL makes all of this data type stuff so complicated. In my opinion, this type system optimizes for frequent reads and writes of records to and from persistent storage. Rather than constantly serializing and deserializing in-memory data types native to the language, the series of characters are the source of truth and typed on a character-by-character basis. Considering that the UNIVAC systems Grace used to develop FLOW-MATIC could only store 12,000 characters in memory (for reference, this blog post is more than twice that), COBOL programs could not fit in memory, so records had to be continuously read from and written to magnetic tape. Often a single system would run four or more magnetic tape systems in parallel.
 
 ![](https://media.giphy.com/media/y1rQER2na8q8E/giphy.gif)
@@ -302,7 +311,9 @@ To some of you, it sure might seem wasteful to store character encoded numbers i
 ```js
 const myFirstNum: string = "10";
 const mySecondNum: string = "10";
-const myResult: string = (Number.parseInt(myFirstNum, 10) * Number.parseInt(mySecondNum, 10)).toString();
+const myResult: string = (
+  Number.parseInt(myFirstNum, 10) * Number.parseInt(mySecondNum, 10)
+).toString();
 ```
 
 All of that decoding and encoding of strings looks expensive! Wouldn't it be better to do something like the following?
@@ -316,6 +327,7 @@ const myResult: number = myFirstNum * mySecondNum;
 For a long time, the COBOL standard did not allow for this. However, COBOL 2002 allows us to indicate how a number should be defined in memory via a `usage` clause.
 
 Here is the traditional COBOL method that makes heavy use of character encoding and decoding:
+
 ```powershell
 identification division.
 program-id.   MultipleTwoNumbers.
@@ -347,6 +359,7 @@ display "Result is = ", Result.
 Num1, Num2, and Result are now stored as binary numbers rather than encoded characters. Huzzah!
 
 ### English-like Syntax
+
 As mentioned in the history section, one of [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)'s key design goals for FLOW-MATIC and COBOL was a high-level syntax that was broadly approachable to non-mathematicians. With little prior-work to draw from, Grace effectively design from first principles. Given that most scientific languages were derived from mathematical theories, such as lambda calculus, Grace decided to derive her general-purpose business-oriented language from the humanities, specifically the structure and syntax of English prose.
 
 This design principle informs the COBOL syntax.
@@ -399,13 +412,13 @@ As shown by this program, COBOL is very similar to English. It optimizes for rea
 
 ## Conclusions
 
-While COBOL's English-like syntax may seem heavy and burdensome to modern UNIX developers accustomed to terse commands and man pages, the syntax often reads like clear pseudo-code. Writing the guessing game, I felt drawn to refactor my sentences to read as naturally as possible, much like the process of editing this blog post. The fact that Grace Hopper created this syntax from first principles in 1955 is remarkable and a testament to her intuition about the power of natural language. Like the famous Steve Jobs quote, Grace Hopper combined technology with the liberal arts to create something remarkable. 
+While COBOL's English-like syntax may seem heavy and burdensome to modern UNIX developers accustomed to terse commands and man pages, the syntax often reads like clear pseudo-code. Writing the guessing game, I felt drawn to refactor my sentences to read as naturally as possible, much like the process of editing this blog post. The fact that Grace Hopper created this syntax from first principles in 1955 is remarkable and a testament to her intuition about the power of natural language. Like the famous Steve Jobs quote, Grace Hopper combined technology with the liberal arts to create something remarkable.
 
 Due to these characteristics, COBOL achieved its goal of democratizing programming, which in turn fueled the "Go-Go" tech boom of the 1960s. Trade schools similar to modern coding bootcamps popped up around the world, teaching COBOL in just three or four months. In the United States, many of these students attending were veterans using their GI Bill to pursue an alternative to a four-year college degree. Graduate-level math was no longer a prerequisite to becoming a professional programmer.
 
 For this reason, we are in Grace's debt.
 
-```powershell
+```````````````powershell
 identification division.
 program-id. GraceHopper.
 author. Sean McBride.
@@ -441,13 +454,14 @@ display "         \\           //        \\           //         ".
 display "          `,=========`            `=========,`          ".
 display "                                                        ".
 display "                                                        ".
-```
+```````````````
+
 [Run at CodingGround](http://tpcg.io/H3mR9V)
 
-
 References for additional study of COBOL:
-* [GnuCOBOL Compiler](https://sourceforge.net/projects/open-cobol/)
-* [GnuCOBOL Programmer's Guide](https://open-cobol.sourceforge.io/guides/GnuCOBOL%202.2%20NOV2017%20Programmers%20Guide%20(US%20Letter).pdf)
-* [My code examples](https://github.com/bushidocodes/cobol-lang)
-* [Good COBOL Tutorials by Michael Coughlan](http://www.csis.ul.ie/cobol/course/COBOLIntro.htm#intro)
-* [Good COBOL Book by Michael Coughlan](https://www.amazon.com/Beginning-COBOL-Programmers-Michael-Coughlan/dp/1430262532)
+
+- [GnuCOBOL Compiler](https://sourceforge.net/projects/open-cobol/)
+- [GnuCOBOL Programmer's Guide](<https://open-cobol.sourceforge.io/guides/GnuCOBOL%202.2%20NOV2017%20Programmers%20Guide%20(US%20Letter).pdf>)
+- [My code examples](https://github.com/bushidocodes/cobol-lang)
+- [Good COBOL Tutorials by Michael Coughlan](http://www.csis.ul.ie/cobol/course/COBOLIntro.htm#intro)
+- [Good COBOL Book by Michael Coughlan](https://www.amazon.com/Beginning-COBOL-Programmers-Michael-Coughlan/dp/1430262532)
