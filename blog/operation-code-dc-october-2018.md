@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 category: Operation Code
-title: 'Operation Code DC - October 2018'
+title: "Operation Code DC - October 2018"
 date: 2018-10-23T18:50:41.000Z
 author: spmcbride1201
 ---

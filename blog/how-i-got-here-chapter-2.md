@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 category: Career
-title: 'How I got here: Chapter 2'
+title: "How I got here: Chapter 2"
 date: 2019-05-24T18:50:41.000Z
 author: spmcbride1201
 slug: how-i-got-here-chapter-2
@@ -11,7 +11,7 @@ tags:
   - retrospective
 ---
 
-As I've gotten older and gained perspective on my life, I've concluded that many aspects of my personality and career have been broadly shaped by the era, location, and community of my childhood. In this blog series, "How I got Here," I plan to retrospect on a few different periods of my life and some of their lasting influences on my professional pursuits and hobbies. 
+As I've gotten older and gained perspective on my life, I've concluded that many aspects of my personality and career have been broadly shaped by the era, location, and community of my childhood. In this blog series, "How I got Here," I plan to retrospect on a few different periods of my life and some of their lasting influences on my professional pursuits and hobbies.
 
 [In chapter one, I discussed the unlikely series of events that allowed me to tour a large Silicon Valley tech firm in 1993, where I learned about the world wide web for the first time.](/how-i-got-here-chapter-1) This chapter covers the subsequent two years, when I became obsessed and relentlessly campaigned for a home computer, leading me to build my own PC shortly after the release of Windows 95.
 
@@ -23,7 +23,7 @@ Around this time, my Opa, Richard Grokenberger, taught me to use MS-DOS. Before 
 
 ![](/img/posts/how-i-got-here-chapter-2/wolf3d.jpg)
 
-Folks at my church later took an interest in my hobby, and they started donating old computers from their attics and basements to create a computer lab that I could tinker with. This gave me access to an [original IBM PC](https://www.quora.com/What-was-it-like-to-use-the-first-IBM-Personal-Computer), a Compaq laptop, a Commodore, and an Apple \]\[. I usually spent my time writing small programs in BASIC, but I figured out that it was a good idea to keep a piece of religious software, such as the game Bible Adventures, loaded on one of the computers to make sure I looked like a studious Christian whenever the pastor came by. 
+Folks at my church later took an interest in my hobby, and they started donating old computers from their attics and basements to create a computer lab that I could tinker with. This gave me access to an [original IBM PC](https://www.quora.com/What-was-it-like-to-use-the-first-IBM-Personal-Computer), a Compaq laptop, a Commodore, and an Apple \]\[. I usually spent my time writing small programs in BASIC, but I figured out that it was a good idea to keep a piece of religious software, such as the game Bible Adventures, loaded on one of the computers to make sure I looked like a studious Christian whenever the pastor came by.
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/QQnB5QrQWA8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -40,7 +40,7 @@ Seeing that I was crestfallen, my dad took pity on me and suggested that, rather
 Thus began a multi-month odyssey going to popup "Computer Show and Sale" events throughout Northern California. I drew up a list of all the different parts that I needed for a working computer, and I bought them piece by piece over the course of several months. At the computer shows, I bargained with the vendors and tried to negotiate down the prices of the individual components. I bought a Pentium chip here, a couple of Taiwanese memory chips there, and eventually got everything I needed.
 
 ![](/img/posts/how-i-got-here-chapter-2/computer-part-receipts.jpg)
-<br/>*Receipts for parts from the Computer Show and Sale*
+<br/>_Receipts for parts from the Computer Show and Sale_
 
 I popped in an MS-DOS floppy diskette and a Windows 95 CD-ROM, and I got to work partitioning and formating the hard drive and installing the operating system. Once the system booted, I took a closer look at what else was on the CD, and noticed a video file. I double clicked, and Weezer's Buddy Holly music video started playing. Too bad I hadn't yet earned the money to buy a sound card!
 

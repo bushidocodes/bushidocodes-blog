@@ -2,7 +2,7 @@
 category: Career
 templateKey: blog-post
 title: Saints Francis, Jude, and Watson
-date: 2011-07-15T13:43:59-05:00 
+date: 2011-07-15T13:43:59-05:00
 author: spmcbride1201
 slug: saints-francis-jude-and-watson/
 coverimage: /img/posts/stFrancisJudeWatsonCover.jpg

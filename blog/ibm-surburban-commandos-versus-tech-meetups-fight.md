@@ -2,7 +2,7 @@
 category: Opinion
 templateKey: blog-post
 title: "IBM Surburban Commandos versus Tech MeetUps: FIGHT!"
-date: 2014-08-28T16:26:59-05:00 
+date: 2014-08-28T16:26:59-05:00
 author: spmcbride1201
 slug: ibm-surburban-commandos-versus-tech-meetups-fight/
 coverimage: /img/posts/suburbanCommandoCover.jpg

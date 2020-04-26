@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 category: Opinion
-title: 'Goodbye Decipher!'
+title: "Goodbye Decipher!"
 date: 2018-10-24T18:50:41.000Z
 author: spmcbride1201
 ---
@@ -24,4 +24,5 @@ In no particular order, here are a handful of photos of some fun times at Deciph
 ![](/img/posts/goodbye-decipher/9.jpg)
 ![](/img/posts/goodbye-decipher/10.jpg)
 ![](/img/posts/goodbye-decipher/11.jpg)
+
 <div style="position:relative;height:0;padding-bottom:61.69%"><iframe src="https://www.youtube.com/embed/SLG4y8m0Lsw?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="584" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>

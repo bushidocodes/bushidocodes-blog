@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import styled from 'styled-components';
-import { Layout, Article, Wrapper, SectionTitle } from 'components';
-import { media } from '../utils/media';
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import styled from "styled-components";
+import { Layout, Article, Wrapper, SectionTitle } from "components";
+import { media } from "../utils/media";
 
 const Content = styled.div`
   grid-column: 2;
@@ -23,7 +23,7 @@ const Hero = styled.div`
   grid-column: 2;
   padding: 3rem 2rem 6rem 2rem;
   text-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  color: ${props => props.theme.colors.grey.dark};
+  color: ${(props) => props.theme.colors.grey.dark};
 
   p {
     font-size: 1.68rem;
@@ -47,18 +47,19 @@ const IndexPage = ({
       <Hero>
         <h1>Hi.</h1>
         <p>
-          I&apos;m Sean McBride, a military veteran turned Software Engineer. 
-          <br/>
-          I code with Honor, defend the Just, and pursue lofty undertakings on the Cutting Edge
+          I&apos;m Sean McBride, a military veteran turned Software Engineer.
+          <br />I code with Honor, defend the Just, and pursue lofty
+          undertakings on the Cutting Edge
         </p>
-        <p>You can connect with me on 
+        <p>
+          You can connect with me on
           <a href="https://www.linkedin.com/in/bushidocodes/"> LinkedIn</a> or
           <a href="https://twitter.com/bushidocodes"> Twitter</a>
         </p>
       </Hero>
       <Content>
         <SectionTitle>Latest stories</SectionTitle>
-        {postEdges.map(post => (
+        {postEdges.map((post) => (
           <Article
             title={post.node.frontmatter.title}
             date={post.node.frontmatter.date}
