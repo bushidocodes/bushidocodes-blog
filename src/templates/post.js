@@ -1,16 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { Link, graphql } from 'gatsby';
-import styled from 'styled-components';
-import kebabCase from 'lodash/kebabCase';
-import Disqus from 'gatsby-plugin-disqus';
-import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from 'components';
-import { media } from '../utils/media';
-import config from '../../config/SiteConfig';
-import '../utils/prismjs-theme.css';
+import React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import { Link, graphql } from "gatsby";
+import styled from "styled-components";
+import kebabCase from "lodash/kebabCase";
+import Disqus from "gatsby-plugin-disqus";
+import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from "components";
+import { media } from "../utils/media";
+import config from "../../config/SiteConfig";
+import "../utils/prismjs-theme.css";
 
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
+const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
 
 const Content = styled.article`
   grid-column: 2;
@@ -18,7 +18,7 @@ const Content = styled.article`
   max-width: 1000px;
   border-radius: 1rem;
   padding: 2rem 4rem;
-  background-color: ${props => props.theme.colors.bg};
+  background-color: ${(props) => props.theme.colors.bg};
   z-index: 9000;
   margin-top: -3rem;
   @media ${media.tablet} {
@@ -37,7 +37,10 @@ const PostContent = styled.div`
   margin-top: 4rem;
 `;
 
-const Post = ({ pageContext: { slug, prev, next }, data: { markdownRemark: postNode } }) => {
+const Post = ({
+  pageContext: { slug, prev, next },
+  data: { markdownRemark: postNode },
+}) => {
   const post = postNode.frontmatter;
 
   return (
@@ -51,11 +54,13 @@ const Post = ({ pageContext: { slug, prev, next }, data: { markdownRemark: postN
         <Content>
           <Title>{post.title}</Title>
           <Subline>
-            {post.date} &mdash; {postNode.timeToRead} Min Read &mdash; In{' '}
-            <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
+            {post.date} &mdash; {postNode.timeToRead} Min Read &mdash; In{" "}
+            <Link to={`/categories/${kebabCase(post.category)}`}>
+              {post.category}
+            </Link>
           </Subline>
           <PostContent dangerouslySetInnerHTML={{ __html: postNode.html }} />
-          <Disqus 
+          <Disqus
             identifier={post.slug}
             title={post.title}
             url={`${config.siteUrl}${pathPrefix}${post.slug}`}
