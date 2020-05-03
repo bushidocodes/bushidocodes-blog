@@ -36,7 +36,7 @@ Stepping down from the podium, Watson watched Bob Evans and Dr. Frederick Brooks
 
 <em>The System/360 is ready to run your workloads, Mister Customer. Contact your IBM representative for more information.</em>
 
-<iframe src="http://www.youtube.com/embed/rt6UA4MsWTk" height="315" width="560" allowfullscreen="" frameborder="0"></iframe>
+<iframe src="https://www.youtube.com/embed/rt6UA4MsWTk" height="315" width="560" allowfullscreen="" frameborder="0"></iframe>
 
 ## Final Thoughts
 
@@ -50,6 +50,6 @@ The IBM mainframe has evolved continuously since my grandfather worked with the 
 
 Here's to the next 50!!!
 
-<iframe src="http://www.youtube.com/embed/5nm_CyKYpsA" height="315" width="420" allowfullscreen="" frameborder="0"></iframe></p>
+<iframe src="https://www.youtube.com/embed/5nm_CyKYpsA" height="315" width="420" allowfullscreen="" frameborder="0"></iframe></p>
 
 This post was originally hosted on the [Millennial Mainframer blog](https://web.archive.org/web/20150915085305/http://millennialmainframer.com/2014/04/system360-50/)
