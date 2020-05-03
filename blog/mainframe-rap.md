@@ -2,7 +2,7 @@
 category: Mainframe
 templateKey: blog-post
 title: Mainframe Rap
-date: 2012-02-10T01:24:00-04:00
+date: 2013-02-08T06:21:00-04:00
 author: spmcbride1201
 slug: mainframe-rap/
 coverimage: /img/posts/mainframe-rap.jpg
@@ -76,4 +76,4 @@ For more mainframe rap, check out Forgot about z
 
 <iframe src="http://www.youtube.com/embed/5nm_CyKYpsA" height="315" width="420" allowfullscreen="" frameborder="0"></iframe>
 
-This post was originally hosted on the [Millennial Mainframer blog](https://web.archive.org/web/20190417032953/http://millennialmainframer.com/2012/02/big-iron-on-the-interwebz-apis-arent-just-for-google/)
+This post was originally hosted on the [Millennial Mainframer blog](https://web.archive.org/web/20190417035239/http://millennialmainframer.com/2013/02/mainframe-rap/)

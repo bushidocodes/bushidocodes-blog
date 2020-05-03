@@ -1,0 +1,32 @@
+---
+category: Mainframe
+templateKey: blog-post
+title: Millennial Mainframers - Hype and Myth or Fact and Future?
+date: 2013-07-29T10:41:26-04:00
+author: spmcbride1201
+slug: millennial-mainframers-hype-and-myth-or-fact-and-future/
+---
+
+<figure id="attachment_294" class="wp-caption thumbnail alignnone" style="width: 577px;">
+<img class=" wp-image-294 " alt="Are Millennial Mainframers as mythical as Bigfoot?" src="/img/posts/millennial-mainframer-bigfoot.jpg" width="577" height="682"/>
+    <figcaption class="wp-caption-text">Are Millennial Mainframers as mythical as Bigfoot?</figcaption>
+</figure>
+
+For the past two years, Millennial Mainframer has sought to provide a “fresh perspective on all things mainframe.” Nearly all of this “fresh perspective” has come from young millennials working in mainframe positions or studying mainframe topics at universities, such as <a href="https://web.archive.org/web/20190417043246/http://millennialmainframer.com/2012/09/the-mainframe-and-software-defined-networking/" target="_blank">Marist College</a> or <a href="https://web.archive.org/web/20190417043246/http://millennialmainframer.com/category/rochester-institute-of-technology/" target="_blank">Rochester Institute of Technology</a>, who were willing to write blog posts on aspects of the mainframe that most interested them. Our content has been voluntarily created without solicitation or support from IBM or any other vendors as a public resource to other young mainframers. My hope and attention with this blog was to attract a younger readership than other mainframe blogs, and perhaps to eventually grow the blog into a social community and support network for trading best practices, training resources, and suggestions.
+
+By some metrics, the Millennial Mainframer blog has been a resounding success. The number of hits to the site have grown continuously over the past two years. We&#8217;ve been cross-linked by a number of vendor and industry blogs and websites, re-tweeted by IBM Vice Presidents, and even listed on a variety of “Suggested Website” slides presented at SHARE. Most importantly, we have created a space for first-time bloggers to project their voice into the generally-older mainframe blogosphere. Considering the late nights and weekend that our content creators have spent writing and promoting this content, we have celebrated each of these small victories as vindication that our Millennial Mainframer perspective will only grow stronger as older workers retire and we assume responsibility for mainframe deployments around the world.
+
+Despite this wonderful growth and name recognition, I have gradually come to the conclusion that <b>Millennial Mainframer is failing its core mission of building an audience of mainframe students and other young mainframers.</b> While we intended to position ourselves as a medium for millennials to produce original technical content for consumption by other millennials, we&#8217;ve instead become a medium for millennials to produce content for older mainframers and IBM leadership. This assessment is based on data from WordPress, Google Analytics, Facebook, and Twitter. This theory leads me to some interesting conclusions, including that a majority of the hits on our entry-level “how to” posts may very well be by mainframe professionals that likely already know how to do everything that the author has written about. I’m not sure why an experienced mainframe professional would care to read these basic articles, other than perhaps deriving some level of bemusement.
+
+This has been a bit of a heart-wrenching realization for us. If we’re not effectively reaching students and other Millennial Mainframers, we may not be making much of a meaning impact on the long-term vitality of the mainframe as we had previously though. Could it be because of something we’re doing wrong? After some introspection, I believe that there are certainly some things that we can do better to reach millennials. However, I believe that <b>the fundamental problem with writing a mainframe blog targeted at millennials is that our target audience of Millennial Mainframers is far smaller than expected, particularly to the level of engagement that would be interested in either reading a mainframe blog. This potentially suggests that existing efforts have been insufficient to handle the mounting mainframe skills crisis.</b>
+
+Speaking with some of my peers has provided additional anecdotal support of this hypothesis, including instances of students taking mainframe courses but then going into other areas of IT, young mainframers losing their jobs during downsizing because they weren&#8217;t as &#8216;essential&#8217; as older mainframers, and various so-called mainframe schools not actually offering mainframe coursework on a consistent or predictable basis. Based on this thought, I have decided to spend some additional time looking at the IBM Academic Initiative, the Master the Mainframe contest, and the blogosphere to get a better idea at the success rate of these programs in shifting the demographics of the mainframe technical community and preventing the long-predicted mainframe skills shortage. Are millennials actually receiving training in mainframe skills, finding mainframe jobs, and receiving adequate mentorship and training by experienced staff? Or are Millennial Mainframers merely a useful myth for dispelling concerns of a mainframe skills shortage when getting customers to upgrade their systems and software? Do Millennial Mainframers actually exist in the flesh in any real numbers? Or are they the Unicorn or Loch Ness monster of the IT World… much talked about, but little seen in the wild?
+
+Stay tuned to Millennial Mainframer this week for a detailed multi-part series on this topic:
+
+- On Tuesday, we&#8217;ll be providing detailed information demonstrating why we that Millennial Mainframer is failing to attract millennial interest
+- On Wednesday, we&#8217;ll be looking at the Master the Mainframe Contest
+- On Thursday, we&#8217;ll be looking at the IBM Academic Initiative and Mainframe offerings at universities around the world
+- On Friday, we&#8217;ll be tying all of these topics together for a final comprehensive conclusion and discussion
+
+This post was originally hosted on the [Millennial Mainframer blog](https://web.archive.org/web/20190417043246/http://millennialmainframer.com/2013/07/millennial-mainframers-hype-and-myth-or-fact-and-future/)
