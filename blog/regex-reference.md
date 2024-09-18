@@ -200,6 +200,7 @@ If you are using capture groups, you need to mark all uses of paratheses that ar
 ## Additional Resources for JavaScript
 
 - [CodeSchool's Breaking the Ice with Regular Expressions Course](https://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions)
+- [Cyrilex: Interactive Regular Expressions Tester and Visualizer](https://extendsclass.com/regex-tester.html)
 - [Eloquent JavaScript, Chapter 9: Regular Expressions](https://eloquentjavascript.net/09_regexp.html)
 - [JavaScript RegExp on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 - [RegEx 101](https://regex101.com/)
