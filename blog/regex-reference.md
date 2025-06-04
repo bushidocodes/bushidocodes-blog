@@ -26,7 +26,7 @@ A single regex can evaluate about several alterative regular expression literals
 
 `/boat|ship/` //true for "ship" or "boat"
 
-The OR `|` operator can be used on only part of a regular expression literal using parantheses
+The OR `|` operator can be used on only part of a regular expression literal using parentheses
 
 `/steam(boat|ship)/`
 
@@ -183,15 +183,15 @@ Most operating systems represent NEWLINE using the `\n` control character. Howev
 
 ## Match Groups
 
-Wrapping a portion of a regex with paranthesis creates a match group that is returned at the evaluation of the regex. Match groups can even be nested inside of other match groups.
+Wrapping a portion of a regex with parentheses creates a match group that is returned at the evaluation of the regex. Match groups can even be nested inside of other match groups.
 
-Matches common ways of writing US phone numbers and returns the area code, first three digits, and last four digits as seperate control groups.
+Matches common ways of writing US phone numbers and returns the area code, first three digits, and last four digits as separate control groups.
 
 ```
 /\+?1?\+?\s?-?\(?(\d{3})\)?\s?-?\s?(\d{3})\s?-?(\d{4})/gm
 ```
 
-If you are using capture groups, you need to mark all uses of paratheses that are used to logically group operands like OR. This is done by appending ?: at the start of the inner string of the paranthesis.
+If you are using capture groups, you need to mark all uses of parentheses that are used to logically group operands like OR. This is done by appending ?: at the start of the inner string of the parentheses.
 
 ```
 /(^(?:http://|https://)?(?:www\.)?\w+\.(?:gov|com|net|edu)$)/
