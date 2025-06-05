@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import styled from 'styled-components';
-import { Layout, Article, Wrapper, SectionTitle } from 'components';
-import { media } from '../utils/media';
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import styled from "styled-components";
+import { Layout, Article, Wrapper, SectionTitle } from "components";
+import { media } from "../utils/media";
 
 const Content = styled.div`
   grid-column: 2;
@@ -48,7 +48,8 @@ const IndexPage = ({
         <h1>Hi.</h1>
         <p>
           I&apos;m Sean McBride, a military veteran turned Software Engineer.
-          <br />I code with Honor, defend the Just, and pursue lofty undertakings on the Cutting Edge
+          <br />I code with Honor, defend the Just, and pursue lofty
+          undertakings on the Cutting Edge
         </p>
         <p>
           You can connect with me on
@@ -86,7 +87,7 @@ IndexPage.propTypes = {
 
 export const IndexQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
           fields {
