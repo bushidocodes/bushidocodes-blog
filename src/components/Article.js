@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { Link } from "gatsby";
-import kebabCase from "lodash/kebabCase";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import kebabCase from 'lodash/kebabCase';
 
-import { Subline } from "components";
+import Subline from './Subline';
 
 const Post = styled.article`
   display: flex;
@@ -44,7 +44,7 @@ const Article = ({ title, date, excerpt, slug, timeToRead, category }) => {
         <Link to={slug}>{title}</Link>
       </Title>
       <Subline>
-        {date} &mdash; {timeToRead} Min Read &mdash; In{" "}
+        {date} &mdash; {timeToRead} Min Read &mdash; In{' '}
         <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
       </Subline>
       <Excerpt>{excerpt}</Excerpt>
