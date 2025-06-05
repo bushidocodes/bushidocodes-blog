@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { darken, lighten } from "polished";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { darken, lighten } from 'polished';
 
 const Wrapper = styled.header`
   background: linear-gradient(
