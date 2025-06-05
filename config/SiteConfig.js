@@ -1,6 +1,6 @@
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
-  
+
   author: 'Sean McBride', // Author for schemaORGJSONLD
   favicon: 'src/favicon.png', // Your image for favicons. You can find it in the /src folder
   siteBanner: '/social/banner.jpg?1', // Your image for og:image tag. You can find it in the /static folder

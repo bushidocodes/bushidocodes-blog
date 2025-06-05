@@ -305,31 +305,17 @@ Output:
 ```html
 <body onfocus="f(){}" onredo="g(){}">
   <header>
-    <h1>
-      content
-    </h1>
+    <h1>content</h1>
   </header>
   <ul>
-    <li>
-      content
-    </li>
-    <li>
-      content
-    </li>
-    <li>
-      content
-    </li>
+    <li>content</li>
+    <li>content</li>
+    <li>content</li>
   </ul>
   <ul>
-    <li>
-      Io
-    </li>
-    <li>
-      Lua
-    </li>
-    <li>
-      JavaScript
-    </li>
+    <li>Io</li>
+    <li>Lua</li>
+    <li>JavaScript</li>
   </ul>
 </body>
 ```

@@ -1,18 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
-import { Link, graphql } from "gatsby";
-import styled from "styled-components";
-import {
-  Layout,
-  Wrapper,
-  Header,
-  Subline,
-  Article,
-  SectionTitle,
-} from "components";
-import { media } from "../utils/media";
-import config from "../../config/SiteConfig";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { Link, graphql } from 'gatsby';
+import styled from 'styled-components';
+import { Layout, Wrapper, Header, Subline, Article, SectionTitle } from 'components';
+import { media } from '../utils/media';
+import config from '../../config/SiteConfig';
 
 const Content = styled.div`
   grid-column: 2;
@@ -30,14 +23,9 @@ const Content = styled.div`
   }
 `;
 
-const Category = ({
-  pageContext: { category },
-  data: { allMarkdownRemark },
-}) => {
+const Category = ({ pageContext: { category }, data: { allMarkdownRemark } }) => {
   const { edges, totalCount } = allMarkdownRemark;
-  const subline = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with "${category}"`;
+  const subline = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${category}"`;
 
   return (
     <Layout>
