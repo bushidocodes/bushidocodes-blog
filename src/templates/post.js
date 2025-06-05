@@ -1,16 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
-import { Link, graphql } from "gatsby";
-import styled from "styled-components";
-import kebabCase from "lodash/kebabCase";
-import { Disqus } from "gatsby-plugin-disqus";
-import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from "components";
-import { media } from "../utils/media";
-import config from "../../config/SiteConfig";
-import "../utils/prismjs-theme.css";
-
-const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { Link, graphql } from 'gatsby';
+import styled from 'styled-components';
+import kebabCase from 'lodash/kebabCase';
+import { Disqus } from 'gatsby-plugin-disqus';
+import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from 'components';
+import { media } from '../utils/media';
+import config from '../../config/SiteConfig';
+import '../utils/prismjs-theme.css';
 
 const Content = styled.article`
   grid-column: 2;
@@ -37,13 +35,10 @@ const PostContent = styled.div`
   margin-top: 4rem;
 `;
 
-const Post = ({
-  pageContext: { slug, prev, next },
-  data: { markdownRemark: postNode },
-}) => {
+const Post = ({ pageContext: { slug, prev, next }, data: { markdownRemark: postNode } }) => {
   const post = postNode.frontmatter;
 
-  let disqusConfig = {
+  const disqusConfig = {
     url: `${config.siteUrl + slug}`,
     identifier: slug,
     title: post.title,
@@ -60,10 +55,8 @@ const Post = ({
         <Content>
           <Title>{post.title}</Title>
           <Subline>
-            {post.date} &mdash; {postNode.timeToRead} Min Read &mdash; In{" "}
-            <Link to={`/categories/${kebabCase(post.category)}`}>
-              {post.category}
-            </Link>
+            {post.date} &mdash; {postNode.timeToRead} Min Read &mdash; In{' '}
+            <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
           </Subline>
           <PostContent dangerouslySetInnerHTML={{ __html: postNode.html }} />
           <Disqus config={disqusConfig} />
