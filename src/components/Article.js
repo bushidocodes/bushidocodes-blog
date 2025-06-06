@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
@@ -34,6 +33,19 @@ const Excerpt = styled.p`
   margin-bottom: 1rem;
 `;
 
+/**
+ * @typedef {Object} ArticleProps
+ * @property {string} title
+ * @property {string} date
+ * @property {string} excerpt
+ * @property {string} slug
+ * @property {number} timeToRead
+ * @property {string} category
+ */
+
+/**
+ * @param {ArticleProps} props
+ */
 const Article = ({ title, date, excerpt, slug, timeToRead, category }) => {
   const firstChar = title.charAt(0);
 
@@ -54,11 +66,3 @@ const Article = ({ title, date, excerpt, slug, timeToRead, category }) => {
 
 export default Article;
 
-Article.propTypes = {
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  excerpt: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired,
-  timeToRead: PropTypes.number.isRequired,
-  category: PropTypes.string.isRequired,
-};

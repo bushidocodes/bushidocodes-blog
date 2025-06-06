@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { Link, graphql } from "gatsby";
 import styled from "styled-components";
@@ -31,6 +30,14 @@ const Title = styled.h3`
   margin-bottom: 0.75rem;
 `;
 
+/**
+ * @typedef {Object} CategoryProps
+ * @property {{ group: Array<{fieldValue: string, totalCount: number}> }} data
+ */
+
+/**
+ * @param {CategoryProps} props
+ */
 const Category = ({
   data: {
     allMarkdownRemark: { group },
@@ -59,13 +66,6 @@ const Category = ({
 
 export default Category;
 
-Category.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      group: PropTypes.array.isRequired,
-    }),
-  }).isRequired,
-};
 
 export const postQuery = graphql`
   query CategoriesPage {
