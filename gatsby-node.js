@@ -1,5 +1,5 @@
 const path = require('path');
-const _ = require('lodash');
+const kebabCase = require('./src/utils/kebabCase');
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
@@ -9,12 +9,12 @@ exports.onCreateNode = ({ node, actions }) => {
       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
     ) {
-      slug = `/${_.kebabCase(node.frontmatter.slug)}`;
+      slug = `/${kebabCase(node.frontmatter.slug)}`;
     } else if (
       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
     ) {
-      slug = `/${_.kebabCase(node.frontmatter.title)}`;
+      slug = `/${kebabCase(node.frontmatter.title)}`;
     }
     createNodeField({ node, name: 'slug', value: slug });
   }
@@ -68,17 +68,17 @@ exports.createPages = ({ graphql, actions }) => {
 
         let categories = [];
 
-        _.each(posts, (edge) => {
-          if (_.get(edge, 'node.frontmatter.category')) {
+        posts.forEach((edge) => {
+          if (edge?.node?.frontmatter?.category) {
             categories = categories.concat(edge.node.frontmatter.category);
           }
         });
 
-        categories = _.uniq(categories);
+        categories = Array.from(new Set(categories));
 
         categories.forEach((category) => {
           createPage({
-            path: `/categories/${_.kebabCase(category)}`,
+            path: `/categories/${kebabCase(category)}`,
             component: categoryPage,
             context: {
               category,
