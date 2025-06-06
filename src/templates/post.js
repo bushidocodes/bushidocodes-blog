@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import kebabCase from 'lodash/kebabCase';
-import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from 'components';
+import { Layout, Wrapper, Header, SubLine, SEO, PrevNext } from 'components';
 import { media } from '../utils/media';
 import config from '../../config/SiteConfig';
 import '../utils/prismjs-theme.css';
@@ -48,10 +48,10 @@ const Post = ({ pageContext: { slug, prev = null, next = null } = {}, data: { ma
         </Header>
         <Content>
           <Title>{post.title}</Title>
-          <Subline>
+          <SubLine>
             {post.date} &mdash; {postNode.timeToRead} Min Read &mdash; In{' '}
             <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
-          </Subline>
+          </SubLine>
           <PostContent dangerouslySetInnerHTML={{ __html: postNode.html }} />
           <PrevNext prev={prev} next={next} />
         </Content>

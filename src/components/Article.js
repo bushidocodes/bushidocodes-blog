@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 
-import Subline from './Subline';
+import SubLine from './SubLine';
 
 const Post = styled.article`
   display: flex;
@@ -43,10 +43,10 @@ const Article = ({ title, date, excerpt, slug, timeToRead, category }) => {
         <Initiale>{firstChar}</Initiale>
         <Link to={slug}>{title}</Link>
       </Title>
-      <Subline>
+      <SubLine>
         {date} &mdash; {timeToRead} Min Read &mdash; In{' '}
         <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
-      </Subline>
+      </SubLine>
       <Excerpt>{excerpt}</Excerpt>
     </Post>
   );
