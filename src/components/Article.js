@@ -18,7 +18,7 @@ const Title = styled.h2`
   margin-bottom: 0.75rem;
 `;
 
-const Initiale = styled.span`
+const Initial = styled.span`
   position: absolute;
   font-size: 7rem;
   transform: translate(-50%, -50%);
@@ -52,7 +52,7 @@ function Article({ title, date, excerpt, slug, timeToRead, category }) {
   return (
     <Post>
       <Title>
-        <Initiale>{firstChar}</Initiale>
+        <Initial>{firstChar}</Initial>
         <Link to={slug}>{title}</Link>
       </Title>
       <SubLine>
