@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
@@ -32,6 +31,15 @@ const Next = styled.div`
   }
 `;
 
+/**
+ * @typedef {Object} PrevNextProps
+ * @property {Object} [next]
+ * @property {Object} [prev]
+ */
+
+/**
+ * @param {PrevNextProps} props
+ */
 const PrevNext = ({ next = null, prev = null }) => (
   <Wrapper>
     {prev && (
@@ -52,8 +60,4 @@ const PrevNext = ({ next = null, prev = null }) => (
 
 export default PrevNext;
 
-PrevNext.propTypes = {
-  next: PropTypes.object,
-  prev: PropTypes.object,
-};
 

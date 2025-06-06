@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 import { Layout, Article, Wrapper, SectionTitle } from "components";
@@ -37,6 +36,14 @@ const Hero = styled.div`
   }
 `;
 
+/**
+ * @typedef {Object} IndexProps
+ * @property {{ edges: Array<any> }} data
+ */
+
+/**
+ * @param {IndexProps} props
+ */
 const IndexPage = ({
   data: {
     allMarkdownRemark: { edges: postEdges },
@@ -77,13 +84,6 @@ const IndexPage = ({
 
 export default IndexPage;
 
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array.isRequired,
-    }),
-  }).isRequired,
-};
 
 export const IndexQuery = graphql`
   query IndexQuery {

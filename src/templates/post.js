@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
@@ -34,6 +33,15 @@ const PostContent = styled.div`
   margin-top: 4rem;
 `;
 
+/**
+ * @typedef {Object} PostPageProps
+ * @property {{ slug: string, next?: object, prev?: object }} [pageContext]
+ * @property {{ markdownRemark: object }} data
+ */
+
+/**
+ * @param {PostPageProps} props
+ */
 const Post = ({ pageContext: { slug, prev = null, next = null } = {}, data: { markdownRemark: postNode } }) => {
   const post = postNode.frontmatter;
 
@@ -62,16 +70,6 @@ const Post = ({ pageContext: { slug, prev = null, next = null } = {}, data: { ma
 
 export default Post;
 
-Post.propTypes = {
-  pageContext: PropTypes.shape({
-    slug: PropTypes.string.isRequired,
-    next: PropTypes.object,
-    prev: PropTypes.object,
-  }),
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object.isRequired,
-  }).isRequired,
-};
 
 
 export const postQuery = graphql`

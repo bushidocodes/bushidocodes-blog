@@ -1,7 +1,6 @@
 /* eslint no-unused-expressions:0 */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import SEO from './SEO';
@@ -67,6 +66,14 @@ const Footer = styled.footer`
   }
 `;
 
+/**
+ * @typedef {Object} LayoutProps
+ * @property {React.ReactNode | React.ReactNode[]} children
+ */
+
+/**
+ * @param {LayoutProps} props
+ */
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -93,7 +100,3 @@ const Layout = ({ children }) => (
 );
 
 export default Layout;
-
-Layout.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
-};

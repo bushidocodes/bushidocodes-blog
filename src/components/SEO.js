@@ -1,9 +1,18 @@
 /* eslint-disable react/require-default-props */
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import config from '../../config/SiteConfig';
 
+/**
+ * @typedef {Object} SEOProps
+ * @property {Object} [postNode]
+ * @property {string} [postPath]
+ * @property {boolean} [postSEO]
+ */
+
+/**
+ * @param {SEOProps} props
+ */
 const SEO = (props) => {
   const { postNode, postPath, postSEO } = props;
   let title;
@@ -98,8 +107,3 @@ const SEO = (props) => {
 
 export default SEO;
 
-SEO.propTypes = {
-  postNode: PropTypes.object,
-  postPath: PropTypes.string,
-  postSEO: PropTypes.bool,
-};
