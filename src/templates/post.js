@@ -35,7 +35,7 @@ const PostContent = styled.div`
   margin-top: 4rem;
 `;
 
-const Post = ({ pageContext: { slug, prev, next }, data: { markdownRemark: postNode } }) => {
+const Post = ({ pageContext: { slug, prev = null, next = null } = {}, data: { markdownRemark: postNode } }) => {
   const post = postNode.frontmatter;
 
   const disqusConfig = {
@@ -80,12 +80,6 @@ Post.propTypes = {
   }).isRequired,
 };
 
-Post.defaultProps = {
-  pageContext: PropTypes.shape({
-    next: null,
-    prev: null,
-  }),
-};
 
 export const postQuery = graphql`
   query postBySlug($slug: String!) {

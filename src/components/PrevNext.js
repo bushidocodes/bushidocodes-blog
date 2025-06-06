@@ -32,7 +32,7 @@ const Next = styled.div`
   }
 `;
 
-const PrevNext = ({ next, prev }) => (
+const PrevNext = ({ next = null, prev = null }) => (
   <Wrapper>
     {prev && (
       <Prev>
@@ -57,7 +57,3 @@ PrevNext.propTypes = {
   prev: PropTypes.object,
 };
 
-PrevNext.defaultProps = {
-  next: null,
-  prev: null,
-};
