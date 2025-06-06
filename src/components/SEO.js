@@ -13,7 +13,7 @@ import config from '../../config/SiteConfig';
 /**
  * @param {SEOProps} props
  */
-const SEO = (props) => {
+function SEO(props) {
   const { postNode, postPath, postSEO } = props;
   let title;
   let description;
@@ -103,7 +103,6 @@ const SEO = (props) => {
       <meta name="twitter:image" content={image} />
     </Helmet>
   );
-};
+}
 
 export default SEO;
-

@@ -74,29 +74,31 @@ const Footer = styled.footer`
 /**
  * @param {LayoutProps} props
  */
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query LayoutQuery {
-        site {
-          buildTime(formatString: "DD.MM.YYYY")
+function Layout({ children }) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query LayoutQuery {
+          site {
+            buildTime(formatString: "DD.MM.YYYY")
+          }
         }
-      }
-    `}
-    render={(data) => (
-      <ThemeProvider theme={theme}>
-        <>
-          <SEO />
-          <GlobalStyle />
-          {children}
-          <Footer>
-            &copy; 2018 by Sean McBride. All rights reserved. <br />
-            <span>Last build: {data.site.buildTime}</span>
-          </Footer>
-        </>
-      </ThemeProvider>
-    )}
-  />
-);
+      `}
+      render={(data) => (
+        <ThemeProvider theme={theme}>
+          <>
+            <SEO />
+            <GlobalStyle />
+            {children}
+            <Footer>
+              &copy; 2018 by Sean McBride. All rights reserved. <br />
+              <span>Last build: {data.site.buildTime}</span>
+            </Footer>
+          </>
+        </ThemeProvider>
+      )}
+    />
+  );
+}
 
 export default Layout;

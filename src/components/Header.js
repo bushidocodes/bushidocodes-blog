@@ -36,11 +36,12 @@ const Content = styled.div`
 /**
  * @param {HeaderProps} props
  */
-const Header = ({ children }) => (
-  <Wrapper>
-    <Content>{children}</Content>
-  </Wrapper>
-);
+function Header({ children }) {
+  return (
+    <Wrapper>
+      <Content>{children}</Content>
+    </Wrapper>
+  );
+}
 
 export default Header;
-
