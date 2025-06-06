@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { darken, lighten } from 'polished';
+import { darken, lighten } from '../utils/colors';
 
 const Wrapper = styled.header`
   background: linear-gradient(
