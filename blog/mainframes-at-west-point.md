@@ -49,7 +49,7 @@ Once the plebes burst through the door, the upperclassman&#8217;s roommate attac
 <div>
 <figure id="attachment_406" class="wp-caption thumbnail alignnone" style="width: 800px;">
 <img class="size-full wp-image-406" alt="Cadet at Full-Screen Terminal" src="/img/posts/West-Point-Mainframe-Terminal.jpg" width="800" height="640"/>
-<figcaption class="wp-caption-text">Cadet Frank Monaco (USMA Class of 1970) pecks at a keypunch while working diligently on his senior design project for EF489: a macro assembler for the GE 635 Mainframe. In a twist of fact, Frank later returned to West Point to act as the Academy&#8217;s Chief Information Officer during the 1990s. Frank now consults and teaches courses on computing. Follow him on Twitter at @ProfessorMonaco.</figcaption>
+<figcaption class="wp-caption-text">Cadet Frank Monaco (USMA Class of 1970) pecks at a keypunch while working diligently on his senior design project for EF489: a macro assembler for the GE 635 Mainframe. In a twist of fact, Frank later returned to West Point to act as the Academy&#8217;s Chief Information Officer during the 1990s. Frank now consults and teaches courses on computing. Follow him on X at @ProfessorMonaco.</figcaption>
 </figure>
 </div>
 <p>I&#8217;ve recently asked a handful of West Point graduates about their memories taking computer coursework on this mainframe, and here are few of the best anecdotes:</p>

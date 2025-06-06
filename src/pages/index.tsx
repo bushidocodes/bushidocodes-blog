@@ -60,8 +60,9 @@ function IndexPage({
           </p>
           <p>
             You can connect with me on
-            <a href="https://www.linkedin.com/in/bushidocodes/"> LinkedIn</a> or
-            <a href="https://twitter.com/bushidocodes"> Twitter</a>
+            <a href="https://www.linkedin.com/in/bushidocodes/"> LinkedIn</a>,
+            <a href="https://x.com/bushidocodes"> X</a>, or
+            <a href="https://www.youtube.com/@BushidoCodes"> YouTube</a>
           </p>
         </Hero>
         <Content>

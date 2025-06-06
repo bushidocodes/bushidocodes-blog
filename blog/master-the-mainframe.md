@@ -17,7 +17,7 @@ slug: master-the-mainframe/
 <li>Wikipedia Article for &#8220;Master the Mainframe&#8221;</li>
 <li>Master the Mainframe Facebook Page</li>
 <li>Master the Mainframe Australia Facebook Page</li>
-<li>Master the Mainframe Twitter Page</li>
+<li>Master the Mainframe X Page</li>
 <li>IBM-sponsored blog &#8220;Building a Smarter Planet&#8221; hosting an post written by Master the Mainframe winner Miles Nosler entitled &#8220;How Wrangling Big Data Helped Me &#8216;Master the Mainframe&#8217;</li>
 <li>A short Dataversity post called &#8220;IBM Announces Winners of Master the Mainframe Contest&#8221;</li>
 <li>Millennial Mainframer&#8217;s Forum for discussing Master the Mainframe.  **heh heh**</li>

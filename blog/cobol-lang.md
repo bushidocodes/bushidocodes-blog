@@ -8,11 +8,11 @@ slug: cobol-lang/
 coverimage: /img/posts/cobol-lang/GraceHopperCobol.jpg
 ---
 
-I am not a professional mainframe developer. I'm just a polyglot programmer backpacking across different language ecosystems with a sense of curiosity and the software equivalent of a Rick Steves' travel guide: [Bruce A. Tate](https://twitter.com/redrapids)’s [Seven Languages in Seven Weeks](https://pragprog.com/book/btlang/seven-languages-in-seven-weeks). In previous posts, [I introduced my motivations for this project](/programming-language-tourism) and [discussed the Ruby programming language](/ruby-lang).
+I am not a professional mainframe developer. I'm just a polyglot programmer backpacking across different language ecosystems with a sense of curiosity and the software equivalent of a Rick Steves' travel guide: [Bruce A. Tate](https://x.com/redrapids)’s [Seven Languages in Seven Weeks](https://pragprog.com/book/btlang/seven-languages-in-seven-weeks). In previous posts, [I introduced my motivations for this project](/programming-language-tourism) and [discussed the Ruby programming language](/ruby-lang).
 
 This week, I've decided to go off-script and investigate a language that was definitely not on the tour.
 
-If you want to keep track of my travels as I explore other languages such as Io, Prolog, Scala, Erlang, Clojure, Haskell, and others, [follow me on Twitter](https://twitter.com/bushidocodes).
+If you want to keep track of my travels as I explore other languages such as Io, Prolog, Scala, Erlang, Clojure, Haskell, and others, [follow me on X](https://x.com/bushidocodes).
 
 ![Grace teaching COBOL](/img/posts/cobol-lang/GraceHopperCobol.jpg)
 
