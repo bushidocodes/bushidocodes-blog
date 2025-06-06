@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { Layout, Wrapper, Header, SubLine, SEO, PrevNext } from 'components';
+import { Layout, Wrapper, Header, SubLine, SEO, PrevNext } from '../components';
 import kebabCase from '../utils/kebabCase';
 import { media } from '../utils/media';
 import config from '../../config/SiteConfig';
