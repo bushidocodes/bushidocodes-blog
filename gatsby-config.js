@@ -56,26 +56,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-netlify',
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: ['G-XYCR5NVHV6', 'UA-117490231-1'],
-        // This object is used for configuration specific to this plugin
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: false,
-        },
-      },
-    },
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: "UA-117490231-1",
-    //     head: true,
-    //     anonymize: true,
-    //     respectDNT: true,
-    //   },
-    // },
   ],
 };
