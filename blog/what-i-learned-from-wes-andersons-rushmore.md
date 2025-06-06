@@ -1,7 +1,7 @@
 ---
 category: Fun
 templateKey: blog-post
-title: "What I learned from Wes Anderson‘s Rushmore"
+title: 'What I learned from Wes Anderson‘s Rushmore'
 date: 2014-08-31T03:44:59-05:00
 author: spmcbride1201
 slug: what-i-learned-from-wes-andersons-rushmore/

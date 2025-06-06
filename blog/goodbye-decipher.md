@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 category: Opinion
-title: "Goodbye Decipher!"
+title: 'Goodbye Decipher!'
 date: 2018-10-24T18:50:41.000Z
 author: spmcbride1201
 ---
