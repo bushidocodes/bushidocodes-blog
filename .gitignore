@@ -58,3 +58,5 @@ public/
 
 # Bundle stats
 bundle-stats.json
+# Windows zone identifier files
+*.Zone.Identifier
