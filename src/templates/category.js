@@ -7,7 +7,7 @@ import {
   Layout,
   Wrapper,
   Header,
-  Subline,
+  SubLine,
   Article,
   SectionTitle,
 } from "components";
@@ -46,9 +46,9 @@ const Category = ({
         </Header>
         <Content>
           <SectionTitle>Category &ndash; {category}</SectionTitle>
-          <Subline sectionTitle>
+          <SubLine sectionTitle>
             {subline} (See <Link to="/categories">all categories</Link>)
-          </Subline>
+          </SubLine>
           {edges.map((post) => (
             <Article
               title={post.node.frontmatter.title}
