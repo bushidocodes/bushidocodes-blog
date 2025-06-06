@@ -1,7 +1,7 @@
 ---
 category: History
 templateKey: blog-post
-title: "Princess House Mysteries: Chapter 2"
+title: 'Princess House Mysteries: Chapter 2'
 date: 2015-04-12T03:30:59-05:00
 author: spmcbride1201
 slug: princess-house-mysteries-chapter-2/

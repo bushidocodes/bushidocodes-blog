@@ -1,7 +1,7 @@
 ---
 category: programming
 templateKey: blog-post
-title: "Missing Prelude to Rust Ownership"
+title: 'Missing Prelude to Rust Ownership'
 date: 2019-06-09T18:50:41.000Z
 author: spmcbride1201
 slug: missing-prelude-to-rust-ownership

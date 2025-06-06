@@ -1,5 +1,5 @@
 const path = require('path');
-const kebabCase = require('./src/utils/kebabCase');
+const kebabCase = require('./src/utils/kebabCase.ts');
 
 // Gatsby node APIs used to enhance or extend the default build process.
 
@@ -65,11 +65,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  const categories = Array.from(
-    new Set(
-      posts.map((edge) => edge.node.frontmatter.category).filter(Boolean),
-    ),
-  );
+  const categories = Array.from(new Set(posts.map((edge) => edge.node.frontmatter.category).filter(Boolean)));
 
   categories.forEach((category) => {
     createPage({
@@ -79,4 +75,3 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 };
-

@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 category: Career
-title: "How I got here: Chapter 1"
+title: 'How I got here: Chapter 1'
 date: 2018-04-09T18:50:41.000Z
 author: spmcbride1201
 slug: how-i-got-here-chapter-1
