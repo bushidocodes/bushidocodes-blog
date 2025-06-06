@@ -65,7 +65,11 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  const categories = Array.from(new Set(posts.flatMap((edge) => edge.node.frontmatter.category || [])));
+  const categories = Array.from(
+    new Set(
+      posts.map((edge) => edge.node.frontmatter.category).filter(Boolean),
+    ),
+  );
 
   categories.forEach((category) => {
     createPage({
