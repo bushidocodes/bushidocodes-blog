@@ -37,7 +37,7 @@ Current features:
   - Sitemap
   - Schema.org JSONLD
   - OpenGraph Tags
-  - Twitter Tags
+  - X Tags
 - Favicons
 
 ## Getting Started

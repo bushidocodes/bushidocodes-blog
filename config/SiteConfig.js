@@ -12,7 +12,7 @@ module.exports = {
   siteUrl: 'https://www.bushido.codes', // Domain of your site. No trailing slash!
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@bushidocodes', // Twitter Username - Optional
+  userTwitter: '@bushidocodes', // X Username - Optional
   ogSiteName: 'Bushido Codes', // Facebook Site Name - Optional
   ogLanguage: 'en_US', // Facebook Language
 

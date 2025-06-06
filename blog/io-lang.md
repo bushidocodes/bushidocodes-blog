@@ -7,15 +7,15 @@ author: spmcbride1201
 slug: io-lang/
 ---
 
-I am not a long-time Io enthusiast. I'm just a polyglot developer backpacking across different language ecosystems with a sense of curiosity and the software equivalent of a Rick Steves' travel guide: [Bruce A. Tate](https://twitter.com/redrapids)’s [Seven Languages in Seven Weeks](https://pragprog.com/book/btlang/seven-languages-in-seven-weeks). In previous posts, I [introduced my motivations for this project](https://www.bushido.codes/programming-language-tourism) and explored the [Ruby](https://www.bushido.codes/ruby-lang) and [COBOL](https://www.bushido.codes/cobol-lang) programming languages.
+I am not a long-time Io enthusiast. I'm just a polyglot developer backpacking across different language ecosystems with a sense of curiosity and the software equivalent of a Rick Steves' travel guide: [Bruce A. Tate](https://x.com/redrapids)’s [Seven Languages in Seven Weeks](https://pragprog.com/book/btlang/seven-languages-in-seven-weeks). In previous posts, I [introduced my motivations for this project](https://www.bushido.codes/programming-language-tourism) and explored the [Ruby](https://www.bushido.codes/ruby-lang) and [COBOL](https://www.bushido.codes/cobol-lang) programming languages.
 
 Our next stop is [Io](https://iolanguage.org/), a little-known scripting language that combines LISP-like homoiconicity (all code is data) with prototype-based objects and a simple message passing model. While largely unsuccessful at gaining mainstream adoption, it demonstrates the power of a well-thought design based on simple constructs. Learning Io is a good way to understand the foundation of prototype-based languages (such as JavaScript) and generally become a better programmer.
 
-If you want to keep track of my travels as I explore other languages such as Prolog, Scala, Erlang, Clojure, and Haskell, [follow me on Twitter](https://twitter.com/bushidocodes).
+If you want to keep track of my travels as I explore other languages such as Prolog, Scala, Erlang, Clojure, and Haskell, [follow me on X](https://x.com/bushidocodes).
 
 ## Background
 
-Many programmers hit a point in their career where they feel the itch to unpack the abstractions that they depend on through a passion project. In 2002, [Steve Dekorte](https://twitter.com/stevedekorte) developed an itch to understand interpreters, and his resulting passion project was [the Io programming language](https://iolanguage.org/). While many programmers would be content to design a toy language to learn the concepts, Steve's appreciation of the theory and history of programming languages allowed him to produce a design that showed great promise and attracted attention. He mixed one-part LISP with one-part Smalltalk and created a tasty syntax that made programming language nerds drool.
+Many programmers hit a point in their career where they feel the itch to unpack the abstractions that they depend on through a passion project. In 2002, [Steve Dekorte](https://x.com/stevedekorte) developed an itch to understand interpreters, and his resulting passion project was [the Io programming language](https://iolanguage.org/). While many programmers would be content to design a toy language to learn the concepts, Steve's appreciation of the theory and history of programming languages allowed him to produce a design that showed great promise and attracted attention. He mixed one-part LISP with one-part Smalltalk and created a tasty syntax that made programming language nerds drool.
 
 Steve released the first version of Io in April 2002, attracting a community of early-adopters who provided feedback on design and ergonomics and blogged about the language. In 2005, two events caused a spike in interest. First, Steve published an [ACM SIGPLAN conference paper](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.95.3637&rep=rep1&type=pdf) explaining his design principles. Second, during an interview at RubyConf 2005, [Matz (the creator of Ruby) suggested Io as his top choice](https://web.archive.org/web/20060617193306/http://jroller.com/page/obie?entry=matz_roundtable_notes) of what languages Rubyists should learn in the coming year.
 
@@ -40,7 +40,7 @@ In 2014, enthusiasts started to daydream about a [2nd gen Io](https://groups.yah
 > A not intolerable way of thinking of Io is it is to object calculus what Lisp is to lambda calculus. There are parts where that analogy breaks down but it's not a bad first approximation."
 > ~smosher
 
-On this thread, Steve mentioned he wanted to do a JavaScript port of Io, but that he was busy with crypto and decentralized web projects. He asked for help with the JavaScript port, but appears to have not gotten a response. If I were in Steve's shoes in 2019, I would consider porting Io to WebAssembly instead. If any readers are interested in this project, consider reaching out to [Steve on Twitter](https://twitter.com/stevedekorte).
+On this thread, Steve mentioned he wanted to do a JavaScript port of Io, but that he was busy with crypto and decentralized web projects. He asked for help with the JavaScript port, but appears to have not gotten a response. If I were in Steve's shoes in 2019, I would consider porting Io to WebAssembly instead. If any readers are interested in this project, consider reaching out to [Steve on X](https://x.com/stevedekorte).
 
 ## Why didn't Io catch on?
 
@@ -464,7 +464,7 @@ Working with Io taught me that a language doesn't need much syntax when the unde
 
 I've never built a programming language, but I share Steve's interests and have done a bit of research on resources for learning about interpreters and compilers. For those academically-minded, the [Dragon book](https://www.amazon.com/Compilers-Principles-Techniques-Tools-2nd/dp/0321486811) seems to be the dominant academic textbook in the space.
 
-Alternatively, professional programmers might prefer [Thorsten Ball](https://twitter.com/thorstenball)'s [Writing An Interpreter In Go](https://interpreterbook.com/) and [Writing A Compiler In Go](https://compilerbook.com/), which offer a paint-by-numbers approach to implementing the [Monkey Programming Language](https://interpreterbook.com/#the-monkey-programming-language).
+Alternatively, professional programmers might prefer [Thorsten Ball](https://x.com/thorstenball)'s [Writing An Interpreter In Go](https://interpreterbook.com/) and [Writing A Compiler In Go](https://compilerbook.com/), which offer a paint-by-numbers approach to implementing the [Monkey Programming Language](https://interpreterbook.com/#the-monkey-programming-language).
 
 Finally, for those interested in systems programming languages and associated concepts, such as computer architecture, assembly languages, virtual machines, etc., check out Noam Nisan and Shimon Schocken's [The Elements of Computing Systems](https://www.nand2tetris.org/). It offers a soup-to-nuts instructions that take you from building virtual NAND Gates to writing Tetris in the Jack programming language.
 

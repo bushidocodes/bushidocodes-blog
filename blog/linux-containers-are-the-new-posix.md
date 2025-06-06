@@ -56,7 +56,7 @@ Given the fact that Linux containers do not eliminate the known pain point of en
 
 ## Who am I?
 
-I'm a Software Engineer with some IBM mainframe, cloud architecture, and distributed systems battle scars currently on hiatus as a Computer Science graduate student at George Washington University. If you’re interested in my opinions, please [follow me on Twitter](https://twitter.com/bushidocodes) or [connect with me on LinkedIn](https://www.linkedin.com/in/bushidocodes/). If you’re an Executive Vice President muckety-muck and want to throw stacks of cash, a Distinguished Engineer title, and a juicy PhD fellowship my way, hit me up on LinkedIn.
+I'm a Software Engineer with some IBM mainframe, cloud architecture, and distributed systems battle scars currently on hiatus as a Computer Science graduate student at George Washington University. If you’re interested in my opinions, please [follow me on X](https://x.com/bushidocodes) or [connect with me on LinkedIn](https://www.linkedin.com/in/bushidocodes/). If you’re an Executive Vice President muckety-muck and want to throw stacks of cash, a Distinguished Engineer title, and a juicy PhD fellowship my way, hit me up on LinkedIn.
 
 (< •\_•)>⌐■-■
 

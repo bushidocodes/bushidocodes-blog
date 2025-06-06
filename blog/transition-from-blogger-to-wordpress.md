@@ -20,7 +20,7 @@ I'm sure that I must some friends that have gone through these sorts of decision
 	<li>It's the lingua franca of blogging, giving it a strong community of plug-ins and themes</li>
 	<li>It offers a far greater degree of customization, even to the point that many commercial websites use the software</li>
 	<li>The blogs are relatively portable due to the open-source nature of the WordPress software. This means that I could rehost the blog between different providers quite easily.</li>
-	<li>It seems to offer greater integration with things like Facebook and Twitter, rather than Blogger, which is predominantly focused on propping up Google+</li>
+        <li>It seems to offer greater integration with things like Facebook and X, rather than Blogger, which is predominantly focused on propping up Google+</li>
 </ul>
 Thanks for your thoughts and suggestions!
 
