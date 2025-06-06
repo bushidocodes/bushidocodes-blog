@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-sitemap: https://www.bushido.codes/sitemap.xml
+sitemap: https://www.bushido.codes/sitemap-index.xml
