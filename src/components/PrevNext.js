@@ -40,24 +40,24 @@ const Next = styled.div`
 /**
  * @param {PrevNextProps} props
  */
-const PrevNext = ({ next = null, prev = null }) => (
-  <Wrapper>
-    {prev && (
-      <Prev>
-        <span>Previous</span>
-        <Link to={prev.fields.slug}>{prev.frontmatter.title}</Link>
-      </Prev>
-    )}
+function PrevNext({ next = null, prev = null }) {
+  return (
+    <Wrapper>
+      {prev && (
+        <Prev>
+          <span>Previous</span>
+          <Link to={prev.fields.slug}>{prev.frontmatter.title}</Link>
+        </Prev>
+      )}
 
-    {next && (
-      <Next>
-        <span>Next</span>
-        <Link to={next.fields.slug}>{next.frontmatter.title}</Link>
-      </Next>
-    )}
-  </Wrapper>
-);
+      {next && (
+        <Next>
+          <span>Next</span>
+          <Link to={next.fields.slug}>{next.frontmatter.title}</Link>
+        </Next>
+      )}
+    </Wrapper>
+  );
+}
 
 export default PrevNext;
-
-

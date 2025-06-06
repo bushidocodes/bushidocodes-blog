@@ -1,17 +1,10 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { Link, graphql } from "gatsby";
-import styled from "styled-components";
-import {
-  Layout,
-  Wrapper,
-  Header,
-  SubLine,
-  Article,
-  SectionTitle,
-} from "components";
-import { media } from "../utils/media";
-import config from "../../config/SiteConfig";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Link, graphql } from 'gatsby';
+import styled from 'styled-components';
+import { Layout, Wrapper, Header, SubLine, Article, SectionTitle } from 'components';
+import { media } from '../utils/media';
+import config from '../../config/SiteConfig';
 
 const Content = styled.div`
   grid-column: 2;
@@ -38,12 +31,9 @@ const Content = styled.div`
 /**
  * @param {CategoryPageProps} props
  */
-const Category = ({
-  pageContext: { category },
-  data: { allMarkdownRemark },
-}) => {
+function Category({ pageContext: { category }, data: { allMarkdownRemark } }) {
   const { edges, totalCount } = allMarkdownRemark;
-  const subline = `${totalCount} post${totalCount === 1 ? "" : "s"} tagged with "${category}"`;
+  const subline = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${category}"`;
 
   return (
     <Layout>
@@ -72,17 +62,13 @@ const Category = ({
       </Wrapper>
     </Layout>
   );
-};
+}
 
 export default Category;
 
-
 export const postQuery = graphql`
   query CategoryPage($category: String!) {
-    allMarkdownRemark(
-      sort: { frontmatter: { date: DESC } }
-      filter: { frontmatter: { category: { eq: $category } } }
-    ) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }, filter: { frontmatter: { category: { eq: $category } } }) {
       totalCount
       edges {
         node {

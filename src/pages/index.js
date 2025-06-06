@@ -1,8 +1,8 @@
-import React from "react";
-import { graphql } from "gatsby";
-import styled from "styled-components";
-import { Layout, Article, Wrapper, SectionTitle } from "components";
-import { media } from "../utils/media";
+import React from 'react';
+import { graphql } from 'gatsby';
+import styled from 'styled-components';
+import { Layout, Article, Wrapper, SectionTitle } from 'components';
+import { media } from '../utils/media';
 
 const Content = styled.div`
   grid-column: 2;
@@ -44,46 +44,46 @@ const Hero = styled.div`
 /**
  * @param {IndexProps} props
  */
-const IndexPage = ({
+function IndexPage({
   data: {
     allMarkdownRemark: { edges: postEdges },
   },
-}) => (
-  <Layout>
-    <Wrapper>
-      <Hero>
-        <h1>Hi.</h1>
-        <p>
-          I&apos;m Sean McBride, a military veteran turned Software Engineer.
-          <br />I code with Honor, defend the Just, and pursue lofty
-          undertakings on the Cutting Edge
-        </p>
-        <p>
-          You can connect with me on
-          <a href="https://www.linkedin.com/in/bushidocodes/"> LinkedIn</a> or
-          <a href="https://twitter.com/bushidocodes"> Twitter</a>
-        </p>
-      </Hero>
-      <Content>
-        <SectionTitle>Latest stories</SectionTitle>
-        {postEdges.map((post) => (
-          <Article
-            title={post.node.frontmatter.title}
-            date={post.node.frontmatter.date}
-            excerpt={post.node.excerpt}
-            timeToRead={post.node.timeToRead}
-            slug={post.node.fields.slug}
-            category={post.node.frontmatter.category}
-            key={post.node.fields.slug}
-          />
-        ))}
-      </Content>
-    </Wrapper>
-  </Layout>
-);
+}) {
+  return (
+    <Layout>
+      <Wrapper>
+        <Hero>
+          <h1>Hi.</h1>
+          <p>
+            I&apos;m Sean McBride, a military veteran turned Software Engineer.
+            <br />I code with Honor, defend the Just, and pursue lofty undertakings on the Cutting Edge
+          </p>
+          <p>
+            You can connect with me on
+            <a href="https://www.linkedin.com/in/bushidocodes/"> LinkedIn</a> or
+            <a href="https://twitter.com/bushidocodes"> Twitter</a>
+          </p>
+        </Hero>
+        <Content>
+          <SectionTitle>Latest stories</SectionTitle>
+          {postEdges.map((post) => (
+            <Article
+              title={post.node.frontmatter.title}
+              date={post.node.frontmatter.date}
+              excerpt={post.node.excerpt}
+              timeToRead={post.node.timeToRead}
+              slug={post.node.fields.slug}
+              category={post.node.frontmatter.category}
+              key={post.node.fields.slug}
+            />
+          ))}
+        </Content>
+      </Wrapper>
+    </Layout>
+  );
+}
 
 export default IndexPage;
-
 
 export const IndexQuery = graphql`
   query IndexQuery {

@@ -46,7 +46,7 @@ const Excerpt = styled.p`
 /**
  * @param {ArticleProps} props
  */
-const Article = ({ title, date, excerpt, slug, timeToRead, category }) => {
+function Article({ title, date, excerpt, slug, timeToRead, category }) {
   const firstChar = title.charAt(0);
 
   return (
@@ -62,7 +62,6 @@ const Article = ({ title, date, excerpt, slug, timeToRead, category }) => {
       <Excerpt>{excerpt}</Excerpt>
     </Post>
   );
-};
+}
 
 export default Article;
-

@@ -42,9 +42,8 @@ const PostContent = styled.div`
 /**
  * @param {PostPageProps} props
  */
-const Post = ({ pageContext: { slug, prev = null, next = null } = {}, data: { markdownRemark: postNode } }) => {
+function Post({ pageContext: { slug, prev = null, next = null } = {}, data: { markdownRemark: postNode } }) {
   const post = postNode.frontmatter;
-
 
   return (
     <Layout>
@@ -66,11 +65,9 @@ const Post = ({ pageContext: { slug, prev = null, next = null } = {}, data: { ma
       </Wrapper>
     </Layout>
   );
-};
+}
 
 export default Post;
-
-
 
 export const postQuery = graphql`
   query postBySlug($slug: String!) {
