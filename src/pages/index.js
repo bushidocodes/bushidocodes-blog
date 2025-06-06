@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
-import { Layout, Article, Wrapper, SectionTitle } from 'components';
+import { Layout, Article, Wrapper, SectionTitle } from '../components';
 import { media } from '../utils/media';
 
 const Content = styled.div`
