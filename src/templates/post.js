@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import kebabCase from 'lodash/kebabCase';
-import { Disqus } from 'gatsby-plugin-disqus';
 import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from 'components';
 import { media } from '../utils/media';
 import config from '../../config/SiteConfig';
@@ -38,11 +37,6 @@ const PostContent = styled.div`
 const Post = ({ pageContext: { slug, prev = null, next = null } = {}, data: { markdownRemark: postNode } }) => {
   const post = postNode.frontmatter;
 
-  const disqusConfig = {
-    url: `${config.siteUrl + slug}`,
-    identifier: slug,
-    title: post.title,
-  };
 
   return (
     <Layout>
@@ -59,7 +53,6 @@ const Post = ({ pageContext: { slug, prev = null, next = null } = {}, data: { ma
             <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
           </Subline>
           <PostContent dangerouslySetInnerHTML={{ __html: postNode.html }} />
-          <Disqus config={disqusConfig} />
           <PrevNext prev={prev} next={next} />
         </Content>
       </Wrapper>

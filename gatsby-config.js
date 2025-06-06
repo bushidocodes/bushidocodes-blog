@@ -57,12 +57,6 @@ module.exports = {
     },
     'gatsby-plugin-netlify',
     {
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `spmcb-com`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
