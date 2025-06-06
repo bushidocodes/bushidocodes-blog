@@ -67,6 +67,15 @@ This starter uses Gatsby's built-in date formatter in the GraphQL queries. If yo
 date(formatString: "DD.MM.YYYY")
 ```
 
+### Formatting
+
+Run Prettier and ESLint to format your files:
+
+```
+npm run lint:js:fix
+npm run lint:md
+```
+
 ### Building your site
 
 ```
