@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import kebabCase from 'lodash/kebabCase';
@@ -47,8 +46,6 @@ const Post = ({ pageContext: { slug, prev, next }, data: { markdownRemark: postN
   return (
     <Layout>
       <Wrapper>
-        <SEO postPath={slug} postNode={postNode} postSEO />
-        <Helmet title={`${post.title} | ${config.siteTitle}`} />
         <Header>
           <Link to="/">{config.siteTitle}</Link>
         </Header>
@@ -68,6 +65,13 @@ const Post = ({ pageContext: { slug, prev, next }, data: { markdownRemark: postN
 };
 
 export default Post;
+
+export const Head = ({ pageContext: { slug }, data: { markdownRemark: postNode } }) => (
+  <>
+    <SEO postPath={slug} postNode={postNode} postSEO />
+    <title>{`${postNode.frontmatter.title} | ${config.siteTitle}`}</title>
+  </>
+);
 
 Post.propTypes = {
   pageContext: PropTypes.shape({
